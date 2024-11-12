@@ -1,44 +1,32 @@
 <script>
-	import { AudioLines, Braces, Code, FileMusic } from 'lucide-svelte';
+	import russia from '$lib/assets/russia.svg';
+	import { Navigation } from 'lucide-svelte';
 </script>
 
-<section class="howitworks" id="how-works">
-	<h2>Как это работает</h2>
+<section class="usage" id="for-who">
+	<h2>Применение</h2>
+	<h3>Узнайте, почему вам стоит попробовать наш API сегодня</h3>
 	<div class="cards">
 		<div class="card">
-			<Braces size="32"></Braces>
-			<h3 class="card-title">Подключитесь к нашему API</h3>
+			<h3 class="card-title">Анализ звонков и разговоров</h3>
 			<p class="card-desc">
 				Используйте наш OpenAI-совместимый API — просто замените одну строку кода.
 			</p>
-			<p class="bg-number">1</p>
 		</div>
 		<div class="card">
-			<FileMusic size="32"></FileMusic>
 			<h3 class="card-title">Отправьте аудиофайлы</h3>
 			<p class="card-desc">Загружайте файлы в любом формате для мгновенной расшифровки.</p>
-			<p class="bg-number">2</p>
 		</div>
 		<div class="card">
-			<AudioLines size="32"></AudioLines>
 			<h3 class="card-title">Получите транскрипцию</h3>
 			<p class="card-desc">
-				В считанные секунды Вы получите готовый текст, готовый к дальнейшему использованию.
+				В считанные секунды вы получите готовый текст, готовый к дальнейшему использованию.
 			</p>
-			<p class="bg-number">3</p>
 		</div>
 	</div>
 </section>
 
 <style>
-	.bg-number {
-		position: absolute;
-		font-size: 40px;
-		font-weight: 450;
-		color: rgba(255, 255, 255, 0.11);
-		right: 32px;
-		top: 20px;
-	}
 	.cards {
 		display: flex;
 		flex-wrap: wrap;
@@ -71,10 +59,9 @@
 		flex: 1 0 300px;
 		background-color: var(--bg-2);
 	}
-	.howitworks {
+	.usage {
 		display: flex;
 		flex-direction: column;
 		margin-top: 72px;
-		margin-bottom: 164px;
 	}
 </style>

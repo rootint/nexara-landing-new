@@ -18,7 +18,7 @@
 
 <style>
 	.subtitle {
-		color: #ddd;
+		color: #aaa;
         margin-right: 0;
         font-weight: 300;
         font-size: 16px;

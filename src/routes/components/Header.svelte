@@ -29,7 +29,7 @@
 	}
 	a {
 		text-decoration: none;
-        font-weight: 300;
+		font-weight: 300;
 	}
 	.hide-on-mobile {
 		display: flex;
@@ -52,6 +52,8 @@
 		left: 16px;
 		top: 0;
 		right: 16px;
+		animation: simpleFadeIn 0.7s ease;
+		z-index: 100;
 	}
 
 	@media (max-width: 768px) {

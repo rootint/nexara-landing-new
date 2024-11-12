@@ -15,7 +15,7 @@
 	line-height: 135%;
 	font-weight: 350;
 	scroll-behavior: smooth;
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 .app {
@@ -58,6 +58,7 @@ h3 {
 	padding: 0;
 	font-size: 24px;
 	text-align: center;
+	z-index: 100;
 }
 
 h4 {
@@ -134,5 +135,14 @@ p {
 		font-size: 20px;
 		margin-bottom: 16px;
 		text-align: center;
+	}
+}
+
+@keyframes simpleFadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }
