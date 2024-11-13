@@ -1,6 +1,5 @@
 <script>
-	import russia from '$lib/assets/russia.svg';
-	import { Navigation } from 'lucide-svelte';
+	import { GraduationCap, Headset, Video } from 'lucide-svelte';
 </script>
 
 <section class="usage" id="for-who">
@@ -8,19 +7,27 @@
 	<h3>Узнайте, почему вам стоит попробовать наш API сегодня</h3>
 	<div class="cards">
 		<div class="card">
-			<h3 class="card-title">Анализ звонков и разговоров</h3>
+			<Headset size="32"></Headset>
+			<h3 class="card-title">Анализ звонков и встреч</h3>
 			<p class="card-desc">
-				Используйте наш OpenAI-совместимый API — просто замените одну строку кода.
+				Автоматически расшифровывайте и анализируйте деловые звонки и встречи, чтобы выявлять
+				ключевые моменты, задачи и улучшать качество обслуживания клиентов.
 			</p>
 		</div>
 		<div class="card">
-			<h3 class="card-title">Отправьте аудиофайлы</h3>
-			<p class="card-desc">Загружайте файлы в любом формате для мгновенной расшифровки.</p>
+			<Video size="32"></Video>
+			<h3 class="card-title">Расшифровка видео</h3>
+			<p class="card-desc">
+				Интегрируйте наш API, чтобы ваши платформы могли быстро преобразовывать аудиодорожки из
+				видео и подкастов в текст.
+			</p>
 		</div>
 		<div class="card">
-			<h3 class="card-title">Получите транскрипцию</h3>
+			<GraduationCap size="32"></GraduationCap>
+			<h3 class="card-title">Транскрипция лекций и учебных материалов</h3>
 			<p class="card-desc">
-				В считанные секунды вы получите готовый текст, готовый к дальнейшему использованию.
+				Добавьте поддержку автоматической расшифровки лекций и вебинаров в ваши образовательные
+				платформы для создания текстовых материалов.
 			</p>
 		</div>
 	</div>

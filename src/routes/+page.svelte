@@ -1,11 +1,9 @@
 <script>
-	// import Cta from './components/CTA.svelte';
-	// import Features from './components/Features.svelte';
 	import Hero from './components/Hero.svelte';
 	import HowItWorks from './components/HowItWorks.svelte';
 	import Features from './components/Features.svelte';
 	import Usage from './components/Usage.svelte';
-	// import Pricing from './components/Pricing.svelte';
+	import Pricing from './components/Pricing.svelte';
 </script>
 
 <svelte:head>
@@ -23,6 +21,7 @@
 <HowItWorks></HowItWorks>
 <Features></Features>
 <Usage></Usage>
+<Pricing></Pricing>
 <!-- <Features></Features>
 <Pricing></Pricing>
 <Cta></Cta> -->
