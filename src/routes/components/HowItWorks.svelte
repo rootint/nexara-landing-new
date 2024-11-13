@@ -61,7 +61,6 @@
 	}
 	.card {
 		position: relative;
-		border: 1px solid rgba(255, 255, 255, 0.11);
 		border-radius: 12px;
 		padding: 32px;
 		display: flex;
@@ -69,7 +68,28 @@
 		align-items: start;
 		box-sizing: border-box;
 		flex: 1 0 300px;
-		background-color: var(--bg-2);
+		background-color: rgba(255, 255, 255, 0.015);
+		backdrop-filter: blur(32px);
+	}
+	.card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 1px; /* Thickness of the border */
+		border-radius: 12px;
+		background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.14));
+		-webkit-mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
+		pointer-events: none; /* Prevents interaction with the pseudo-element */
 	}
 	.howitworks {
 		display: flex;

@@ -78,7 +78,7 @@
 				<img src={russia} class="russia-img" height="210" />
 				<Navigation size="32"></Navigation>
 				<h3 class="card-title">Российский сервис</h3>
-				<p class="card-desc">Разработан и размещен в России.</p>
+				<p class="card-desc">Разработан и размещен в России, не подвержен санкциям.</p>
 			</div>
 		</div>
 	</div>
@@ -139,11 +139,11 @@
 	}
 	.bar-text {
 		color: #999;
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.bar-text-nexara {
 		color: #fff;
-		font-size: 20px;
+		font-size: 16px;
 	}
 	.result-row {
 		display: flex;
@@ -179,7 +179,6 @@
 	}
 	.card {
 		position: relative;
-		border: 1px solid rgba(255, 255, 255, 0.11);
 		border-radius: 12px;
 		padding: 32px;
 		display: flex;
@@ -188,8 +187,29 @@
 		justify-content: end;
 		box-sizing: border-box;
 		flex: 1 0 300px;
-		background-color: var(--bg-2);
+		background-color: rgba(255, 255, 255, 0.015);
+		backdrop-filter: blur(32px);
 		min-height: 274px;
+	}
+	.card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 1px; /* Thickness of the border */
+		border-radius: 12px;
+		background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.14));
+		-webkit-mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		mask:
+			linear-gradient(#fff 0 0) content-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
+		pointer-events: none; /* Prevents interaction with the pseudo-element */
 	}
 	.features {
 		display: flex;

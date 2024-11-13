@@ -3,11 +3,14 @@
 	import './fonts.css';
 	import Header from './components/Header.svelte';
 	import Parallax from './components/Parallax.svelte';
+	import ScrollableHeader from './components/ScrollableHeader.svelte';
 </script>
 
 <Parallax></Parallax>
 
+
 <div class="app">
+    <ScrollableHeader></ScrollableHeader>
 	<Header></Header>
 	<main>
 		<slot />

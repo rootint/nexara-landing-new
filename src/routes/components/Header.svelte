@@ -49,9 +49,9 @@
 		margin-top: 32px;
 		font-weight: 300;
 		position: absolute;
-		left: 16px;
+		left: 24px;
 		top: 0;
-		right: 16px;
+		right: 24px;
 		animation: simpleFadeIn 0.7s ease;
 		z-index: 100;
 	}
