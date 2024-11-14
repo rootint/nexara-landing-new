@@ -6,7 +6,7 @@
 	import ScrollableHeader from './components/ScrollableHeader.svelte';
 </script>
 
-<Parallax></Parallax>
+<!-- <Parallax></Parallax> -->
 
 
 <div class="app">
