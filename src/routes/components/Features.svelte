@@ -98,6 +98,9 @@
 		min-height: 296px;
 		min-width: 567px;
 		max-width: 968px;
+		transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+			skew(0deg, 0deg);
+		transform-style: preserve-3d;
 	}
 	.russia-img {
 		position: absolute;
@@ -255,10 +258,10 @@
 		.bars-container-small > .result-row > .bar {
 			max-width: 150px;
 		}
-        .bars-container-small > .result-row:last-child > .bar {
+		.bars-container-small > .result-row:last-child > .bar {
 			max-width: 200px;
 		}
-        .bars-container-small > .result-row:nth-last-child(2) > .bar {
+		.bars-container-small > .result-row:nth-last-child(2) > .bar {
 			max-width: 170px;
 		}
 	}
