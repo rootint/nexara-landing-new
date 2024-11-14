@@ -7,28 +7,28 @@
 
 	let scrollPosition = 0;
 
-	onMount(() => {
-		const handleScroll = () => {
-			scrollPosition = window.scrollY;
-		};
+	// onMount(() => {
+	// 	const handleScroll = () => {
+	// 		scrollPosition = window.scrollY;
+	// 	};
 
-		window.addEventListener('scroll', handleScroll);
+	// 	window.addEventListener('scroll', handleScroll);
 
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	});
+	// 	return () => {
+	// 		window.removeEventListener('scroll', handleScroll);
+	// 	};
+	// });
 
-	function handleScroll() {
-		if (!ticking) {
-			requestAnimationFrame(() => {
-				scrollY = window.scrollY;
-				ticking = false;
-			});
+	// function handleScroll() {
+	// 	if (!ticking) {
+	// 		requestAnimationFrame(() => {
+	// 			scrollY = window.scrollY;
+	// 			ticking = false;
+	// 		});
 
-			ticking = true;
-		}
-	}
+	// 		ticking = true;
+	// 	}
+	// }
 </script>
 
 <div class="parallax-container">
