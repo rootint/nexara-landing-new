@@ -40,9 +40,7 @@
 					</div>
 				</div>
 				<h3 class="card-title">Легкая интеграция</h3>
-				<p class="card-desc">
-					Очень просто перейти от OpenAI - вставьте одну строчку кода и готово.
-				</p>
+				<p class="card-desc">Забудьте о сложностях перехода. Одна строка кода – и вы с нами.</p>
 			</div>
 		</div>
 		<div class="card-col">
@@ -75,8 +73,8 @@
 			</div>
 			<div style="height: 32px;"></div>
 			<div class="card">
-				<img src={russia} class="russia-img" height="210" />
-				<Navigation size="32"></Navigation>
+				<img src={russia} class="russia-img" height="230" />
+				<Navigation size="32" style="z-index: 100;"></Navigation>
 				<h3 class="card-title">Российский сервис</h3>
 				<p class="card-desc">Разработан и размещен в России, не подвержен санкциям.</p>
 			</div>
@@ -85,6 +83,26 @@
 </section>
 
 <style>
+	.card {
+		position: relative;
+		border-radius: 12px;
+		padding: 32px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: end;
+		box-sizing: border-box;
+		flex: 1 0 300px;
+		background-color: rgba(255, 255, 255, 0.015);
+		backdrop-filter: blur(32px);
+		min-height: 296px;
+		transition: background-color 0.2s ease;
+		min-width: 567px;
+		max-width: 968px;
+	}
+	.card:hover {
+		background-color: rgba(255, 255, 255, 0.025);
+	}
 	.russia-img {
 		position: absolute;
 		right: 32px;
@@ -100,6 +118,7 @@
 		margin-right: 16px;
 		font-family: 'Fira Code', monospace;
 		color: #777;
+		min-width: 8px;
 	}
 	.code {
 		font-family: 'Fira Code', monospace;
@@ -107,7 +126,7 @@
 	}
 	.card-col {
 		box-sizing: border-box;
-		flex: 1 0 300px;
+		flex: 1 0;
 	}
 	.small {
 		padding: 4px 16px !important;
@@ -160,36 +179,24 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 32px;
-		margin-top: 56px;
+		margin-top: 48px;
 	}
 	.card-title {
 		margin-top: 32px;
 		margin-bottom: 20px;
 		font-size: 24px;
 		text-align: start;
-		font-weight: 450;
+		color: #fff;
+		font-weight: 480;
 	}
 	.card-desc {
-		line-height: 140%;
+		line-height: 145%;
 		font-size: 16px;
 		margin: 0;
 		text-align: start;
 		padding: 0;
 		z-index: 100;
-	}
-	.card {
-		position: relative;
-		border-radius: 12px;
-		padding: 32px;
-		display: flex;
-		flex-direction: column;
-		align-items: start;
-		justify-content: end;
-		box-sizing: border-box;
-		flex: 1 0 300px;
-		background-color: rgba(255, 255, 255, 0.015);
-		backdrop-filter: blur(32px);
-		min-height: 274px;
+		color: var(--text-3);
 	}
 	.card::before {
 		content: '';
@@ -214,6 +221,49 @@
 	.features {
 		display: flex;
 		flex-direction: column;
-		margin-top: 72px;
+		margin-top: 156px;
+	}
+
+	@media (max-width: 1224px) {
+		.cards {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	@media (max-width: 800px) {
+		.features {
+			width: 100%;
+		}
+		.cards {
+			width: 100%;
+			min-width: unset;
+		}
+		.card-col {
+			width: 100%;
+		}
+		.card {
+			width: 100%;
+			max-width: unset;
+			min-width: unset;
+		}
+		.bar {
+			max-width: 200px;
+		}
+		.bar-nexara {
+			max-width: 200px;
+		}
+
+		.bars-container-small > .result-row > .bar-nexara {
+			max-width: 150px;
+		}
+		.bars-container-small > .result-row > .bar {
+			max-width: 150px;
+		}
+        .bars-container-small > .result-row:last-child > .bar {
+			max-width: 200px;
+		}
+        .bars-container-small > .result-row:nth-last-child(2) > .bar {
+			max-width: 170px;
+		}
 	}
 </style>

@@ -62,7 +62,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-        height: 100%;
+		height: 100%;
 		margin: 0 0;
 		font-weight: 300;
 		position: absolute;
@@ -96,8 +96,8 @@
 	.header-container {
 		position: fixed;
 		top: 0;
-		left: 0;
-		right: 0;
+		left: 8px;
+		right: 8px;
 		z-index: 999;
 		display: flex;
 		justify-content: center;
@@ -128,5 +128,11 @@
 	.header.visible {
 		transform: translateY(0);
 		opacity: 1;
+	}
+
+	@media (max-width: 800px) {
+		.header {
+            visibility: hidden;
+		}
 	}
 </style>

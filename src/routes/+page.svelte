@@ -4,6 +4,8 @@
 	import Features from './components/Features.svelte';
 	import Usage from './components/Usage.svelte';
 	import Pricing from './components/Pricing.svelte';
+	import Cta from './components/CTA.svelte';
+	import Footer from './components/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -22,6 +24,5 @@
 <Features></Features>
 <Usage></Usage>
 <Pricing></Pricing>
-<!-- <Features></Features>
-<Pricing></Pricing>
-<Cta></Cta> -->
+<Cta></Cta>
+<Footer></Footer>

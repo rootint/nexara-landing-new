@@ -2,32 +2,39 @@
 	import { ArrowUpRight } from 'lucide-svelte';
 </script>
 
-<a
-	href="https://docs.google.com/forms/d/e/1FAIpQLSd6SasqzSD3w_gI49MOV6lrMKel3Sbxhhoee8hopLFDQJJhUg/viewform"
->
-	<button class="cta-btn">
-		<div class="row">
-			<p>Связаться с нами</p>
-			<div class="icon">
-				<ArrowUpRight color="#111"></ArrowUpRight>
+<div class="button-col">
+	<a
+		href="https://docs.google.com/forms/d/e/1FAIpQLSd6SasqzSD3w_gI49MOV6lrMKel3Sbxhhoee8hopLFDQJJhUg/viewform"
+	>
+		<button class="cta-btn">
+			<div class="row">
+				<p>Связаться с нами</p>
+				<div class="icon">
+					<ArrowUpRight color="#111"></ArrowUpRight>
+				</div>
 			</div>
-		</div>
-	</button>
-</a>
-<p class="subtitle">0.6₽/мин или на Ваших серверах</p>
+		</button>
+	</a>
+	<p class="subtitle">0.6₽/мин или на Ваших серверах</p>
+</div>
 
 <style>
+    .button-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 	.subtitle {
 		color: #aaa;
-        margin-right: 0;
-        font-weight: 300;
-        font-size: 16px;
-        text-align: center;
-        margin-top: 12px;
+		margin-right: 0;
+		font-weight: 300;
+		font-size: 16px;
+		text-align: center;
+		margin-top: 12px;
 	}
 	.cta-btn {
 		background-color: #fff;
-		padding: 24px 48px;
+		padding: 22px 42px;
 		border-radius: 12px;
 		border: none;
 		cursor: pointer;
