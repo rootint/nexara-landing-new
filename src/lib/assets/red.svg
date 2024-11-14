@@ -1,15 +1,15 @@
-<svg width="704" height="775" viewBox="0 0 704 775" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_144_229)">
-<path d="M111.557 538.827C172.006 860.281 479.046 526.109 593.013 372.781C642.232 288.952 495.985 64.9214 357.872 105.657C274.484 98.6163 51.108 217.374 111.557 538.827Z" fill="url(#paint0_diamond_144_229)" fill-opacity="0.7"/>
-<path d="M111.557 538.827C172.006 860.281 479.046 526.109 593.013 372.781C642.232 288.952 495.985 64.9214 357.872 105.657C274.484 98.6163 51.108 217.374 111.557 538.827Z" stroke="black"/>
+<svg width="684" height="755" viewBox="0 0 684 755" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_174_473)">
+<path d="M101.557 528.827C162.006 850.281 469.046 516.109 583.013 362.781C632.232 278.952 485.985 54.9214 347.872 95.6572C264.484 88.6163 41.108 207.374 101.557 528.827Z" fill="url(#paint0_diamond_174_473)" fill-opacity="0.7"/>
+<path d="M101.557 528.827C162.006 850.281 469.046 516.109 583.013 362.781C632.232 278.952 485.985 54.9214 347.872 95.6572C264.484 88.6163 41.108 207.374 101.557 528.827Z" stroke="black"/>
 </g>
 <defs>
-<filter id="filter0_f_144_229" x="0.816406" y="0.252197" width="702.444" height="773.97" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f_174_473" x="0.816406" y="0.252197" width="682.444" height="753.97" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_144_229"/>
+<feGaussianBlur stdDeviation="45" result="effect1_foregroundBlur_174_473"/>
 </filter>
-<radialGradient id="paint0_diamond_144_229" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(349.8 380.774) rotate(-7.93217) scale(258.5 273.72)">
+<radialGradient id="paint0_diamond_174_473" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(339.8 370.774) rotate(-7.93217) scale(258.5 273.72)">
 <stop stop-color="#CA2A2A"/>
 <stop offset="0.5" stop-color="#CAA52A"/>
 <stop offset="1" stop-color="#CA2A2D"/>

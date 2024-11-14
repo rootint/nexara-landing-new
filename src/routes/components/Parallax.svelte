@@ -10,27 +10,27 @@
 	const throttleDelay = 15; // Throttle delay in milliseconds (adjust as needed)
 	let lastScrollTime = 0;
 
-	onMount(() => {
-		const handleScroll = () => {
-			const now = Date.now();
-			if (now - lastScrollTime > throttleDelay) {
-				lastScrollTime = now;
-				if (!ticking) {
-					requestAnimationFrame(() => {
-						scrollPosition = window.scrollY;
-						ticking = false;
-					});
-					ticking = true;
-				}
-			}
-		};
+	// onMount(() => {
+	// 	const handleScroll = () => {
+	// 		const now = Date.now();
+	// 		if (now - lastScrollTime > throttleDelay) {
+	// 			lastScrollTime = now;
+	// 			if (!ticking) {
+	// 				requestAnimationFrame(() => {
+	// 					scrollPosition = window.scrollY;
+	// 					ticking = false;
+	// 				});
+	// 				ticking = true;
+	// 			}
+	// 		}
+	// 	};
 
-		window.addEventListener('scroll', handleScroll);
+	// 	window.addEventListener('scroll', handleScroll);
 
-		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	});
+	// 	return () => {
+	// 		window.removeEventListener('scroll', handleScroll);
+	// 	};
+	// });
 </script>
 
 <div class="parallax-container">

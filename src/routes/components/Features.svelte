@@ -94,7 +94,7 @@
 		box-sizing: border-box;
 		flex: 1 0 300px;
 		background-color: rgba(255, 255, 255, 0.015);
-		backdrop-filter: blur(32px);
+		backdrop-filter: blur(24px);
 		min-height: 296px;
 		min-width: 567px;
 		max-width: 968px;

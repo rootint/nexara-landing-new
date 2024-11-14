@@ -1,15 +1,15 @@
-<svg width="996" height="719" viewBox="0 0 996 719" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_144_230)">
-<path d="M318.639 101.725C-155.231 117.235 263.355 467.453 460.801 601.489C571.371 661.805 922.466 547.874 891.593 405.461C918.398 323.842 792.51 86.215 318.639 101.725Z" fill="url(#paint0_diamond_144_230)" fill-opacity="0.7"/>
-<path d="M318.639 101.725C-155.231 117.235 263.355 467.453 460.801 601.489C571.371 661.805 922.466 547.874 891.593 405.461C918.398 323.842 792.51 86.215 318.639 101.725Z" stroke="black"/>
+<svg width="976" height="699" viewBox="0 0 976 699" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_174_474)">
+<path d="M308.639 91.725C-165.231 107.235 253.355 457.453 450.801 591.489C561.371 651.805 912.466 537.874 881.593 395.461C908.398 313.842 782.51 76.215 308.639 91.725Z" fill="url(#paint0_diamond_174_474)" fill-opacity="0.7"/>
+<path d="M308.639 91.725C-165.231 107.235 253.355 457.453 450.801 591.489C561.371 651.805 912.466 537.874 881.593 395.461C908.398 313.842 782.51 76.215 308.639 91.725Z" stroke="black"/>
 </g>
 <defs>
-<filter id="filter0_f_144_230" x="0.498535" y="0.5" width="995.001" height="718" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f_174_474" x="0.498535" y="0.5" width="975.001" height="698" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_144_230"/>
+<feGaussianBlur stdDeviation="45" result="effect1_foregroundBlur_174_474"/>
 </filter>
-<radialGradient id="paint0_diamond_144_230" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(498 359.5) rotate(90) scale(258.5 397)">
+<radialGradient id="paint0_diamond_174_474" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(488 349.5) rotate(90) scale(258.5 397)">
 <stop stop-color="#5FCA2A"/>
 <stop offset="0.5" stop-color="#2ACA7F"/>
 <stop offset="1" stop-color="#2ACA8D"/>

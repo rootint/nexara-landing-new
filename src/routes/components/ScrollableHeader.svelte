@@ -107,7 +107,7 @@
 	.header {
 		margin-top: 16px;
 		background-color: rgba(48, 48, 48, 0.5);
-		backdrop-filter: blur(32px);
+		backdrop-filter: blur(24px);
 		border: 1px solid rgba(255, 255, 255, 0.11);
 		border-radius: 12px;
 		color: #fff;
@@ -123,6 +123,8 @@
 		transform: translateY(-100%);
 		opacity: 0;
 		pointer-events: auto; /* Allow interactions within header */
+		transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+			skew(0deg, 0deg);
 	}
 
 	.header.visible {
@@ -132,7 +134,7 @@
 
 	@media (max-width: 800px) {
 		.header {
-            visibility: hidden;
+			visibility: hidden;
 		}
 	}
 </style>

@@ -118,7 +118,7 @@
 		box-sizing: border-box;
 		flex: 1 0 300px;
 		background-color: rgba(255, 255, 255, 0.015);
-		backdrop-filter: blur(32px);
+		backdrop-filter: blur(24px);
 		max-width: 400px;
         transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
 			skew(0deg, 0deg);
