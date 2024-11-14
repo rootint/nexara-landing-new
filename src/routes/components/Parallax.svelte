@@ -6,55 +6,57 @@
 	import { onMount } from 'svelte';
 
 	let scrollPosition = 0;
+	let ticking = false;
+	const throttleDelay = 15; // Throttle delay in milliseconds (adjust as needed)
+	let lastScrollTime = 0;
 
-	// onMount(() => {
-	// 	const handleScroll = () => {
-	// 		scrollPosition = window.scrollY;
-	// 	};
+	onMount(() => {
+		const handleScroll = () => {
+			const now = Date.now();
+			if (now - lastScrollTime > throttleDelay) {
+				lastScrollTime = now;
+				if (!ticking) {
+					requestAnimationFrame(() => {
+						scrollPosition = window.scrollY;
+						ticking = false;
+					});
+					ticking = true;
+				}
+			}
+		};
 
-	// 	window.addEventListener('scroll', handleScroll);
+		window.addEventListener('scroll', handleScroll);
 
-	// 	return () => {
-	// 		window.removeEventListener('scroll', handleScroll);
-	// 	};
-	// });
-
-	// function handleScroll() {
-	// 	if (!ticking) {
-	// 		requestAnimationFrame(() => {
-	// 			scrollY = window.scrollY;
-	// 			ticking = false;
-	// 		});
-
-	// 		ticking = true;
-	// 	}
-	// }
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	});
 </script>
 
 <div class="parallax-container">
-	<img
-		src={green}
-		width="794"
-		style="right: -600px; bottom: -300px; transform: rotateZ({scrollPosition / 90}deg)"
-	/>
-	<img
-		src={red}
-		width="547"
-		style="top: -400px; left: 20%; transform: rotateZ({scrollPosition / 90}deg)"
-	/>
-	<img
-		src={orange}
-		width="685"
-		style="bottom: 0px; left: -500px; transform: rotateZ({-scrollPosition / 90}deg)"
-	/>
-	<img
-		src={purple}
-		width="794"
-		style="right: -350px; top: 10px; transform: rotateZ({scrollPosition / 90}deg)"
-	/>
+	<img id="green" src={green} width="794" style="transform: rotateZ({scrollPosition / 90}deg)" />
+	<img id="red" src={red} width="547" style="transform: rotateZ({scrollPosition / 90}deg)" />
+	<img id="orange" src={orange} width="685" style="transform: rotateZ({-scrollPosition / 90}deg)" />
+	<img id="purple" src={purple} width="794" style="transform: rotateZ({scrollPosition / 90}deg)" />
 </div>
 
 <style>
+	#green {
+		right: -600px;
+		bottom: -300px;
+	}
+	#red {
+		top: -400px;
+		left: 20%;
+	}
+	#orange {
+		bottom: 0px;
+		left: -500px;
+	}
+	#purple {
+		right: -350px;
+		top: 10px;
+	}
 	.parallax-container {
 		position: fixed;
 		height: 100vh;
