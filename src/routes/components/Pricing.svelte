@@ -120,10 +120,6 @@
 		background-color: rgba(255, 255, 255, 0.015);
 		backdrop-filter: blur(32px);
 		max-width: 400px;
-		transition: background-color 0.2s ease;
-	}
-	.card:hover {
-		background-color: rgba(255, 255, 255, 0.025);
 	}
 	.card::before {
 		content: '';

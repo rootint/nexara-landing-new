@@ -96,12 +96,8 @@
 		background-color: rgba(255, 255, 255, 0.015);
 		backdrop-filter: blur(32px);
 		min-height: 296px;
-		transition: background-color 0.2s ease;
 		min-width: 567px;
 		max-width: 968px;
-	}
-	.card:hover {
-		background-color: rgba(255, 255, 255, 0.025);
 	}
 	.russia-img {
 		position: absolute;
