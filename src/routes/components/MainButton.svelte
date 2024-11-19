@@ -4,7 +4,7 @@
 
 <div class="button-col">
 	<a
-		href="https://docs.google.com/forms/d/e/1FAIpQLSd6SasqzSD3w_gI49MOV6lrMKel3Sbxhhoee8hopLFDQJJhUg/viewform"
+		href="https://t.me/RND_RandoM"
 	>
 		<button class="cta-btn">
 			<div class="row">
@@ -15,7 +15,7 @@
 			</div>
 		</button>
 	</a>
-	<p class="subtitle">0.6₽/мин или на Ваших серверах</p>
+	<p class="subtitle">0.4₽/мин или на Ваших серверах</p>
 </div>
 
 <style>

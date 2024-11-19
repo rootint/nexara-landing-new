@@ -12,8 +12,8 @@
 				<p class="top-desc">транскрипция 30 минут аудио</p>
 				<div class="bars-container">
 					<div class="result-row">
-						<div class="bar-nexara">Nexara</div>
-						<p class="bar-text-nexara">18 секунд</p>
+						<div class="bar-nexara"style="width: 100px;">Nexara</div>
+						<p class="bar-text-nexara">10 секунд</p>
 					</div>
 					<div class="result-row">
 						<div class="bar" style="width: 350px;">Yandex SpeechKit</div>
@@ -25,7 +25,7 @@
 					</div>
 				</div>
 				<h3 class="card-title">Высокая скорость</h3>
-				<p class="card-desc">До 5 раз быстрее OpenAI, и до 4 раз быстрее Yandex SpeechKit.</p>
+				<p class="card-desc">До 9 раз быстрее OpenAI, и до 6 раз быстрее Yandex SpeechKit.</p>
 			</div>
 			<div style="height: 32px;"></div>
 			<div class="card">
@@ -45,7 +45,7 @@
 		</div>
 		<div class="card-col">
 			<div class="card">
-				<p class="top-desc">WER (%)</p>
+				<p class="top-desc">Word Error Rate (%)</p>
 				<div class="bars-container-small">
 					<div class="result-row">
 						<div class="bar-nexara small" style="width: 220px;">Nexara</div>

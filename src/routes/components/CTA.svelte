@@ -5,15 +5,15 @@
 
 <section class="cta">
 	<div class="text-container">
-		<h2>Давайте познакомимся!</h2>
-		<p>Оставьте нам свои контакты и мы свяжемся с Вами.</p>
+		<h2>Давайте работать вместе!</h2>
+		<p>Напишите нам и мы обсудим возможности интеграции.</p>
 	</div>
 	<a
-		href="https://docs.google.com/forms/d/e/1FAIpQLSd6SasqzSD3w_gI49MOV6lrMKel3Sbxhhoee8hopLFDQJJhUg/viewform"
+		href="https://t.me/RND_RandoM"
 	>
 		<button class="cta-btn">
 			<div class="row">
-				<p class="button-text">Оставить контакты</p>
+				<p class="button-text">Связаться с нами</p>
 				<div class="icon">
 					<ArrowUpRight color="#fff"></ArrowUpRight>
 				</div>

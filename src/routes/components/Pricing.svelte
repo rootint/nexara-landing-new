@@ -7,7 +7,7 @@
 	<h3>Выберите план, подходящий Вам</h3>
 	<div class="cards">
 		<div class="card">
-			<div class="price">0.6₽/мин</div>
+			<div class="price">0.4₽/мин</div>
 			<h3 class="card-title">Гибкий</h3>
 			<div class="option-wrapper">
 				<div class="option-container">
