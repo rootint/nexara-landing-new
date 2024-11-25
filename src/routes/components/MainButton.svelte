@@ -15,7 +15,7 @@
 			</div>
 		</button>
 	</a>
-	<p class="subtitle">0.3₽/мин или на Ваших серверах</p>
+	<p class="subtitle">0.25₽/мин или на Ваших серверах</p>
 </div>
 
 <style>
