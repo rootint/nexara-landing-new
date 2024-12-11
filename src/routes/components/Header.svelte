@@ -11,19 +11,28 @@
 		</div>
 		<div class="top-row">
 			<div class="hide-on-mobile">
-				<a href="#how-works"><p>Как работает</p></a>
+				<a href="#pricing"><p>Тарифы</p></a>
+				<div style="width: 4rem" />
+				<a href="https://docs.nexara.ru/docs/quick-start"><p>Документация</p></a>
+				<!-- <a href="#how-works"><p>Как работает</p></a>
 				<div style="width: 4rem" />
 				<a href="#features"><p>Преимущества</p></a>
 				<div style="width: 4rem" />
 				<a href="#for-who"><p>Для кого</p></a>
 				<div style="width: 4rem" />
-				<a href="#pricing"><p>Тарифы</p></a>
+				<a href="#pricing"><p>Тарифы</p></a> -->
+			</div>
+			<div class="show-on-mobile">
+				<a href="https://docs.nexara.ru/docs/quick-start"><p>Документация</p></a>
 			</div>
 		</div>
 	</nav>
 </header>
 
 <style>
+	.show-on-mobile {
+		display: none;
+	}
 	.logo {
 		font-weight: 400;
 	}
@@ -64,6 +73,9 @@
 			align-items: center;
 			margin: 0 0;
 			padding-top: 16px;
+		}
+		.show-on-mobile {
+			display: flex;
 		}
 	}
 
