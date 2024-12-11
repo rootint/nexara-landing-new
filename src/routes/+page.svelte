@@ -6,6 +6,9 @@
 	import Pricing from './components/Pricing.svelte';
 	import Cta from './components/CTA.svelte';
 	import Footer from './components/Footer.svelte';
+	import Testimonial from './components/Testimonial.svelte';
+
+	import sergey from '$lib/assets/sergey.jpeg';
 </script>
 
 <svelte:head>
@@ -20,6 +23,11 @@
 </svelte:head>
 
 <Hero></Hero>
+<Testimonial
+	text="Спасибо Nexara за их решение для транскрибации речи! Благодаря их настройке и оптимизации наши затраты сократились в 3 раза, а скорость распознавания речи возросла в несколько раз. Всё сделали оперативно и качественно, при этом продолжают поддерживать нас на всех этапах. Очень довольны результатом и сотрудничеством."
+	subtitle="Сергей Пахандрин, 42apps"
+	image={sergey}
+></Testimonial>
 <HowItWorks></HowItWorks>
 <Features></Features>
 <Usage></Usage>
