@@ -37,7 +37,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 128px;
+        margin-top: 96px;
+		margin-bottom: 96px;
 	}
 	.content {
 		display: flex;
