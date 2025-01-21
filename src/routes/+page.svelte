@@ -45,4 +45,4 @@
 	image={vasil}
 ></Testimonial>
 <Cta></Cta>
-<Footer></Footer>
+<!-- <Footer></Footer> -->

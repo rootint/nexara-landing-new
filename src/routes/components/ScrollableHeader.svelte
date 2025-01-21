@@ -20,11 +20,13 @@
 <div class="header-container">
 	<div class="header {showHeader ? 'visible' : ''}">
 		<nav>
-			<div class="top-row">
-				<img src={icon} width="21" alt="logo" />
-				<div style="width: 12px" />
-				<p class="logo">Nexara</p>
-			</div>
+			<a class="go-home" href="/">
+				<div class="top-row">
+					<img src={icon} width="21" alt="logo" />
+					<div style="width: 12px" />
+					<p class="logo">Nexara</p>
+				</div>
+			</a>
 			<div class="top-row">
 				<div class="hide-on-mobile">
 					<a href="#pricing"><p>Тарифы</p></a>

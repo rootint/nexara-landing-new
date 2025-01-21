@@ -4,14 +4,16 @@
 
 <header>
 	<nav>
-		<div class="top-row">
-			<img src={icon} width="21" alt="logo" />
-			<div style="width: 12px" />
-			<p class="logo">Nexara</p>
-		</div>
+		<a class="go-home" href="/">
+			<div class="top-row">
+				<img src={icon} width="21" alt="logo" />
+				<div style="width: 12px" />
+				<p class="logo">Nexara</p>
+			</div>
+		</a>
 		<div class="top-row">
 			<div class="hide-on-mobile">
-				<a href="#pricing"><p>Тарифы</p></a>
+				<a href="/#pricing"><p>Тарифы</p></a>
 				<div style="width: 4rem" />
 				<a href="https://docs.nexara.ru/docs/quick-start"><p>Документация</p></a>
 				<!-- <a href="#how-works"><p>Как работает</p></a>
@@ -30,6 +32,9 @@
 </header>
 
 <style>
+    .go-home {
+        text-decoration: none;
+    }
 	.show-on-mobile {
 		display: none;
 	}
