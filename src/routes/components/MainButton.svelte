@@ -4,18 +4,18 @@
 
 <div class="button-col">
 	<a
-		href="https://t.me/RND_RandoM"
+		href="https://app.nexara.ru"
 	>
 		<button class="cta-btn">
 			<div class="row">
-				<p>Связаться с нами</p>
+				<p>Попробовать</p>
 				<div class="icon">
 					<ArrowUpRight color="#111"></ArrowUpRight>
 				</div>
 			</div>
 		</button>
 	</a>
-	<p class="subtitle">0.36₽/мин</p>
+	<p class="subtitle">0.36₽/мин или на Ваших серверах</p>
 </div>
 
 <style>
@@ -38,7 +38,7 @@
 		border-radius: 12px;
 		border: none;
 		cursor: pointer;
-		min-width: 274px;
+		/* min-width: 274px; */
 	}
 	.cta-btn:hover {
 		animation: gradient-shift 2s linear infinite;

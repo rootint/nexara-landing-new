@@ -6,14 +6,14 @@
 <section class="cta">
 	<div class="text-container">
 		<h2>Давайте работать вместе!</h2>
-		<p>Напишите нам и мы обсудим возможности интеграции.</p>
+		<p>Попробуйте API и убедитесь во всем сами.</p>
 	</div>
 	<a
-		href="https://t.me/RND_RandoM"
+		href="https://app.nexara.ru"
 	>
 		<button class="cta-btn">
 			<div class="row">
-				<p class="button-text">Связаться с нами</p>
+				<p class="button-text">Попробовать API</p>
 				<div class="icon">
 					<ArrowUpRight color="#fff"></ArrowUpRight>
 				</div>
