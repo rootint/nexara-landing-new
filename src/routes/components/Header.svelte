@@ -23,6 +23,14 @@
 				<a href="#for-who"><p>Для кого</p></a>
 				<div style="width: 4rem" />
 				<a href="#pricing"><p>Тарифы</p></a> -->
+				<div style="width: 4rem" />
+				<a href="https://app.nexara.ru">
+					<button class="cta-btn">
+						<div class="row">
+							<p class="button-text">Войти</p>
+						</div>
+					</button>
+				</a>
 			</div>
 			<div class="show-on-mobile">
 				<a href="https://docs.nexara.ru/docs/quick-start"><p>Документация</p></a>
@@ -32,9 +40,24 @@
 </header>
 
 <style>
-    .go-home {
-        text-decoration: none;
-    }
+	.cta-btn {
+		background-color: #fff;
+		/* padding: 24px 48px; */
+		padding: 8px 20px;
+		border-radius: 12px;
+		border: none;
+		cursor: pointer;
+	}
+	.cta-btn:hover {
+		animation: gradient-shift 2s linear infinite;
+	}
+	.button-text {
+		color: #111;
+		/* font-size: 12px; */
+	}
+	.go-home {
+		text-decoration: none;
+	}
 	.show-on-mobile {
 		display: none;
 	}
