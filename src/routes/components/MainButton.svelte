@@ -15,7 +15,7 @@
 			</div>
 		</button>
 	</a>
-	<p class="subtitle">0.36₽/мин или на Ваших серверах</p>
+	<p class="subtitle">0.36₽/мин или дешевле</p>
 </div>
 
 <style>
@@ -76,7 +76,7 @@
 	@media (max-width: 800px) {
 		.cta-btn {
 			padding: 16px 24px;
-			min-width: 211px;
+			/* min-width: 211px; */
 		}
 		p {
 			margin-right: 6px;

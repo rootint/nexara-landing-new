@@ -4,8 +4,9 @@
 	import { onMount } from 'svelte';
 	import { tick } from 'svelte';
 
-	let scrambledWord = '%#@!%^#$@*(';
-	let targetWord = 'расшифровки';
+	let scrambledWord = '%#@!%^#$@*($@';
+	// let targetWord = 'расшифровки';
+	let targetWord = 'транскрибации';
 	let animationStartTime;
 	let animationDuration = 1000; // in milliseconds
 
@@ -45,7 +46,7 @@
 
 	function getRandomChar() {
 		// const characters = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
-        const characters = '!@#$%^&*():"><?/}{1234567890'
+		const characters = '!@#$%^&*():"><?/}{1234567890';
 		return characters.charAt(Math.floor(Math.random() * characters.length));
 	}
 
@@ -57,13 +58,11 @@
 <section class="hero">
 	<div class="animate-text">
 		<h1 class="title">
-			Быстрый и доступный API для <span style="font-family: 'Fira Code', monospace; font-weight: 450;"
-				>{scrambledWord}</span
-			> аудио
+			Быстрый и доступный API для <span
+				style="font-family: 'Fira Code', monospace; font-weight: 450;">{scrambledWord}</span
+			> файлов
 		</h1>
-		<p class="subtitle">
-			Российский сервис расшифровки встреч, звонков и видео. Интеграция за минуты
-		</p>
+		<p class="subtitle">Российский сервис транскрибации аудио и видео. Быстрая интеграция</p>
 	</div>
 	<div class="animate">
 		<MainButton></MainButton>
@@ -83,7 +82,7 @@
 	}
 	.title {
 		text-align: center;
-		max-width: 800px;
+		max-width: 860px;
 		margin-top: 72px;
 		margin-bottom: 36px;
 		color: var(--text);
@@ -112,15 +111,15 @@
 	}
 
 	@media (max-width: 800px) {
-        .title {
-            font-size: 36px;
-            margin-top: 0px;
-        }
-        .subtitle {
-            font-size: 16px;
-            width: 100%;
-            max-width: unset;
-        }
+		.title {
+			font-size: 36px;
+			margin-top: 0px;
+		}
+		.subtitle {
+			font-size: 16px;
+			width: 100%;
+			max-width: unset;
+		}
 	}
 
 	@media (max-width: 900px) {

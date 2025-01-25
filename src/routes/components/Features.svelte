@@ -32,7 +32,7 @@
 				<div class="code-container">
 					<div class="line-numbers">1<br />2<br />3<br />4<br />5<br />6<br /></div>
 					<div class="code">
-						import openai<br /><br />client = OpenAI(<br />&nbsp;&nbsp;&nbsp;&nbsp;<span
+						from openai import OpenAI<br /><br />client = OpenAI(<br />&nbsp;&nbsp;&nbsp;&nbsp;<span
 							style="font-weight: 550; font-family: 'Fira Code', monospace;"
 							>base_url="https://api.nexara.ru/api/v1",</span
 						>
