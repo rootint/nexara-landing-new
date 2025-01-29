@@ -15,7 +15,7 @@
 			</div>
 		</button>
 	</a>
-	<p class="subtitle">0.36₽/мин или дешевле</p>
+	<p class="subtitle">0,36 ₽/мин или дешевле</p>
 </div>
 
 <style>
