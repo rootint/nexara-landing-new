@@ -9,7 +9,7 @@
 	<div class="cards">
 		<div class="card-col">
 			<div class="card">
-				<p class="top-desc">транскрипция 30 минут аудио</p>
+				<p class="top-desc">транскрибация 30 минут аудио</p>
 				<div class="bars-container">
 					<div class="result-row">
 						<div class="bar-nexara"style="width: 100px;">Nexara</div>
@@ -69,7 +69,7 @@
 					</div>
 				</div>
 				<h3 class="card-title">Точность</h3>
-				<p class="card-desc">Точность транскрипции как у лучших моделей в мире.</p>
+				<p class="card-desc">Точность транскрибации как у лучших моделей в мире.</p>
 			</div>
 			<div style="height: 32px;"></div>
 			<div class="card">

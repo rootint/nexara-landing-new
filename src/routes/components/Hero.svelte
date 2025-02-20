@@ -57,10 +57,13 @@
 
 <section class="hero">
 	<div class="animate-text">
-		<h1 class="title">
+		<!-- <h1 class="title">
 			Быстрый и доступный API для <span
 				style="font-family: 'Fira Code', monospace; font-weight: 450;">{scrambledWord}</span
 			> речи
+		</h1> -->
+        <h1 class="title">
+			Быстрый и доступный API для транскрибации речи
 		</h1>
 		<p class="subtitle">Российский сервис транскрибации аудио и видео. Быстрая интеграция</p>
 	</div>

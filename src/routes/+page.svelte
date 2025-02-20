@@ -15,7 +15,19 @@
 
 <svelte:head>
 	<title>Nexara</title>
-	<meta name="description" content="Nexara" />
+	<meta
+		name="description"
+		content="Nexara - быстрый и доступный API для транскрибации речи. Поддержка большинства аудио и видео форматов, простая интеграция, высокая точность, низкая цена."
+	/>
+	<meta
+		name="keywords"
+		content="Транскрибация речи, API для транскрибации, российский API, транскрибация, перевод речи в текст, видео в текст"
+	/>
+	<meta property="og:title" content="Nexara" />
+    <meta property="og:description" content="Быстрый, доступный API для транскрибации речи с высокой точностью. Поддержка файлов размером до 1 ГБ." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.nexara.ru/" />
+    <meta property="og:locale" content="ru_RU" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link

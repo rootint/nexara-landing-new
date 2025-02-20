@@ -4,7 +4,7 @@
 
 <section class="howitworks" id="how-works">
 	<h2>Как это работает</h2>
-	<h3>Три простых шага к точной транскрибации ваших медиафайлов</h3>
+	<h3>Три простых шага к точной транскрибации ваших аудио и видео</h3>
 	<div class="cards">
 		<div class="card">
 			<Braces size="32"></Braces>
@@ -17,14 +17,14 @@
 		<div class="card">
 			<FileMusic size="32"></FileMusic>
 			<h3 class="card-title">Отправьте файлы</h3>
-			<p class="card-desc">Загружайте файлы в любом формате для транскрибации.</p>
+			<p class="card-desc">Загружайте файлы в любом формате для транскрибации. Размер файла - до 1 ГБ.</p>
 			<p class="bg-number">2</p>
 		</div>
 		<div class="card">
 			<AudioLines size="32"></AudioLines>
 			<h3 class="card-title">Получите текст</h3>
 			<p class="card-desc">
-				В течение нескольких секунд вы получите точную расшифровку аудиозаписи.
+				В течение нескольких секунд вы получите точную транскрибацию.
 			</p>
 			<p class="bg-number">3</p>
 		</div>
