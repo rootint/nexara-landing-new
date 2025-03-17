@@ -15,19 +15,19 @@
 					<p class="option-text">Платите за то, что используете</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" />
+					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Автоматическое масштабирование</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" />
+					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Поддержка 57 языков</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" />
+					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Автоматическое определение языка</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" />
+					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Поддержка различных аудио и видеоформатов</p>
 				</div>
 			</div>
@@ -42,23 +42,23 @@
 			<h3 class="card-title">Кастомный</h3>
 			<div class="option-wrapper">
 				<div class="option-container">
-					<Check color="#fff" size="20" />
+					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">То же самое, что и в Гибком тарифе</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" />
+					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Гибкое ценообразование при масштабировании</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" />
+					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Приоритетная поддержка</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" />
+					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Выделенные вычислительные ресурсы</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" />
+					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Модели на Ваш выбор</p>
 				</div>
 			</div>
@@ -73,14 +73,14 @@
 </section>
 
 <style>
-    .no-border {
-        border: none !important;
-    }
-    .light {
-        color: #fff !important;
-        background-color: #181818 !important;
-        border: rgba(255, 255, 255, 0.12) 1px solid;
-    }
+	.no-border {
+		border: none !important;
+	}
+	.light {
+		color: #fff !important;
+		background-color: #181818 !important;
+		border: rgba(255, 255, 255, 0.12) 1px solid;
+	}
 	.button-row {
 		display: flex;
 		justify-content: center;
@@ -117,7 +117,7 @@
 		right: 32px;
 		/* background-color: #fff; */
 		color: #fff;
-        border: rgba(255, 255, 255, 0.07) 1px solid;
+		border: rgba(255, 255, 255, 0.07) 1px solid;
 		padding: 6px 8px;
 		font-size: 16px;
 		border-radius: 8px;
