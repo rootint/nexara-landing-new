@@ -1,4 +1,8 @@
 <script>
+	import * as m from '$paraglide/messages.js';
+	import {getLocale} from '$paraglide/runtime';
+	import {setLocale} from '$paraglide/runtime';
+	
 	import MainButton from './MainButton.svelte';
 
 	import { onMount } from 'svelte';
@@ -63,13 +67,22 @@
 			> речи
 		</h1> -->
         <h1 class="title">
-			Быстрый и доступный API для транскрибации речи
+			{m.hero_title()}
 		</h1>
-		<h2 class="subtitle">Российский сервис транскрибации аудио и видео. Быстрая интеграция</h2>
+		<h2 class="subtitle">{m.hero_subtitle()}</h2>
 	</div>
 	<div class="animate">
 		<MainButton></MainButton>
 	</div>
+	<!-- svelte-ignore a11y_consider_explicit_label -->
+	<button on:click={() => {
+		const locale = getLocale()
+		if (locale === 'ru') {
+			setLocale('en')
+		} else {
+			setLocale('ru')
+		}
+	}}>change</button>
 </section>
 
 <style>

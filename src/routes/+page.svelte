@@ -1,11 +1,12 @@
 <script>
+	import * as m from '$paraglide/messages.js';
+
 	import Hero from './components/Hero.svelte';
 	import HowItWorks from './components/HowItWorks.svelte';
 	import Features from './components/Features.svelte';
 	import Usage from './components/Usage.svelte';
 	import Pricing from './components/Pricing.svelte';
 	import Cta from './components/CTA.svelte';
-	import Footer from './components/Footer.svelte';
 	import Testimonial from './components/Testimonial.svelte';
 
 	import sergey from '$lib/assets/sergey.jpeg';
@@ -17,7 +18,7 @@
 	<title>Nexara</title>
 	<meta
 		name="description"
-		content="Nexara - быстрый и доступный API для транскрибации речи. Поддержка большинства аудио и видео форматов, простая интеграция, высокая точность, низкая цена."
+		content={m.meta_nexara()}
 	/>
 	<meta
 		name="keywords"
