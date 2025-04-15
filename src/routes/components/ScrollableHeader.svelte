@@ -147,7 +147,7 @@
 		color: #fff;
 		height: 60px;
 		width: 100%;
-		max-width: 1200px; /* Matches your .app container */
+		max-width: var(--desktop-width); /* Matches your .app container */
 		display: flex;
 		align-items: center;
 		justify-content: center;

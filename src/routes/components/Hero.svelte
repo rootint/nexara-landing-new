@@ -56,16 +56,45 @@
 </script>
 
 <section class="hero">
+	<!-- <div class="badges">
+		<a href="https://productradar.ru/product/nexara?utm_source=badge" target="_blank"
+			><img
+				src="https://productradar.ru/badge?period=month&amp;rank=1&amp;theme=black"
+				alt="Награда Продукт месяца #1| Product Radar"
+				width="252"
+				height="68"
+				style="margin: 0px; width: 252px; height: 68px; vertical-align: bottom; border: 1px solid transparent;"
+			/></a
+		>
+		<a href="https://productradar.ru/product/nexara?utm_source=badge" target="_blank"
+			><img
+				src="https://productradar.ru/badge?period=week&amp;rank=1&amp;theme=black"
+				alt="Награда Продукт недели #1| Product Radar"
+				width="252"
+				height="68"
+				style="margin: 0px; width: 252px; height: 68px; vertical-align: bottom; border: 1px solid transparent;"
+			/></a
+		>
+	</div> -->
+	<a href="https://productradar.ru/product/nexara?utm_source=badge" target="_blank"
+		><img
+			src="https://productradar.ru/badge?period=month&amp;rank=1&amp;theme=black"
+			alt="Награда Продукт месяца #1| Product Radar"
+			width="252"
+			height="68"
+			style="margin: 0px; width: 252px; height: 68px; vertical-align: bottom; border: 1px solid transparent;"
+		/></a
+	>
 	<div class="animate-text">
 		<!-- <h1 class="title">
 			Быстрый и доступный API для <span
 				style="font-family: 'Fira Code', monospace; font-weight: 450;">{scrambledWord}</span
 			> речи
 		</h1> -->
-        <h1 class="title">
-			Быстрый и доступный API для транскрибации речи
-		</h1>
-		<h2 class="subtitle">Российский сервис транскрибации аудио и видео. Быстрая интеграция</h2>
+		<h1 class="title">Надежная транскрибация речи для Вашего бизнеса</h1>
+		<h2 class="subtitle">
+			Масштабируемое российское решение для точной обработки речи с предсказуемыми тарифами.
+		</h2>
 	</div>
 	<div class="animate">
 		<MainButton></MainButton>
@@ -73,20 +102,26 @@
 </section>
 
 <style>
+	.badges {
+		display: flex;
+		gap: 24px;
+	}
 	.hero {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		margin: 0 auto;
-		height: 100vh;
+		/* height: 100vh; */
+        min-height: 800px;
+        padding-top: 128px;
 		position: relative;
-		min-height: -webkit-fill-available;
+		/* min-height: -webkit-fill-available; */
 	}
 	.title {
 		text-align: center;
 		max-width: 860px;
-		margin-top: 72px;
+		margin-top: 32px;
 		margin-bottom: 36px;
 		color: var(--text);
 	}
@@ -105,7 +140,7 @@
 
 	.subtitle {
 		font-size: 24px;
-		max-width: 560px;
+		max-width: 620px;
 		text-align: center;
 		font-weight: 400;
 		margin-bottom: 52px;

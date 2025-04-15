@@ -5,12 +5,10 @@
 
 <section class="cta">
 	<div class="text-container">
-		<h2>Присоединяйтесь к нам!</h2>
-		<p>Попробуйте API и убедитесь во всем сами.</p>
+		<h2>Готовы повысить эффективность вашего бизнеса?</h2>
+		<p>Присоединяйтесь к компаниям, обрабатывающим более 2 млн минут аудио ежемесячно с Nexara.</p>
 	</div>
-	<a
-		href="https://app.nexara.ru"
-	>
+	<a href="https://app.nexara.ru">
 		<button class="cta-btn">
 			<div class="row">
 				<p class="button-text">Попробовать API</p>
@@ -23,13 +21,19 @@
 </section>
 
 <style>
+    a {
+        flex-shrink: 1;
+    }
+	h2 {
+		text-align: left;
+	}
 	.cta-btn {
 		background-color: #111;
 		padding: 24px 48px;
 		border-radius: 12px;
 		border: none;
 		cursor: pointer;
-		min-width: 274px;
+		min-width: 300px;
 	}
 	.cta-btn:hover {
 		animation: gradient-shift 2s linear infinite;
@@ -50,44 +54,13 @@
 		margin-bottom: 0px;
 	}
 
-	@keyframes gradient-shift {
-		0% {
-			background-position: 0% center;
-		}
-		100% {
-			background-position: -200% center;
-		}
-	}
-
-	@media (max-width: 1200px) {
-		.cta-btn {
-			padding: 20px 28px;
-			min-width: unset;
-		}
-	}
-
-	@media (max-width: 800px) {
-		.cta-btn {
-			padding: 16px 24px;
-			min-width: 211px;
-		}
-		p {
-			margin-right: 6px;
-			color: #111;
-			font-size: 16px;
-			background-color: none;
-		}
-		.row {
-			align-items: center;
-		}
-	}
 	.cta {
 		display: flex;
 		justify-content: space-between;
 		background-color: #fff;
 		border-radius: 12px;
 		padding: 48px;
-		margin-top: 172px;
+		margin-top: 96px;
 		margin-bottom: 172px;
 	}
 
@@ -104,6 +77,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: start;
+		flex-grow: 1;
 	}
 
 	@media (max-width: 1200px) {
@@ -134,6 +108,37 @@
 		.text-container {
 			display: flex;
 			flex-direction: column;
+			align-items: center;
+		}
+	}
+	@keyframes gradient-shift {
+		0% {
+			background-position: 0% center;
+		}
+		100% {
+			background-position: -200% center;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		.cta-btn {
+			padding: 20px 28px;
+			min-width: unset;
+		}
+	}
+
+	@media (max-width: 800px) {
+		.cta-btn {
+			padding: 16px 24px;
+			min-width: 211px;
+		}
+		p {
+			margin-right: 6px;
+			color: #111;
+			font-size: 16px;
+			background-color: none;
+		}
+		.row {
 			align-items: center;
 		}
 	}

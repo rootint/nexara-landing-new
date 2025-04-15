@@ -16,10 +16,6 @@
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Автоматическое масштабирование</p>
-				</div>
-				<div class="option-container">
-					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Поддержка 57 языков</p>
 				</div>
 				<div class="option-container">
@@ -30,16 +26,24 @@
 					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Поддержка различных аудио и видеоформатов</p>
 				</div>
+                <div class="option-container">
+					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<p class="option-text">Умные субтитры</p>
+				</div>
+                <div class="option-container">
+					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<p class="option-text">200 минут бесплатно</p>
+				</div>
 			</div>
 			<a class="try-button" href="https://app.nexara.ru/"
 				><div class="button-row">
 					<p class="btn-text">Начать сейчас</p>
-					<ArrowUpRight color="#111" size="20"></ArrowUpRight>
+					<!-- <ArrowUpRight color="#111" size="20"></ArrowUpRight> -->
 				</div></a
 			>
 		</div>
 		<div class="card">
-			<h3 class="card-title">Кастомный</h3>
+			<h3 class="card-title">Корпоративный</h3>
 			<div class="option-wrapper">
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
@@ -49,23 +53,27 @@
 					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Гибкое ценообразование при масштабировании</p>
 				</div>
+                <div class="option-container">
+					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<p class="option-text">В несколько раз дешевле Yandex SpeechKit</p>
+				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Приоритетная поддержка</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Выделенные вычислительные ресурсы</p>
+					<p class="option-text">Выделенные вычислительные ресурсы либо On-Premise</p>
 				</div>
-				<div class="option-container">
+				<!-- <div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Модели на Ваш выбор</p>
-				</div>
+				</div> -->
 			</div>
 			<a class="light try-button" href="https://t.me/RND_RandoM"
 				><div class="button-row">
 					<p class="btn-text light no-border">Связаться с нами</p>
-					<ArrowUpRight color="#fff" size="20"></ArrowUpRight>
+					<!-- <ArrowUpRight color="#fff" size="20"></ArrowUpRight> -->
 				</div></a
 			>
 		</div>

@@ -1,39 +1,48 @@
 <script>
-	import { GraduationCap, Headset, Video } from 'lucide-svelte';
+	import { AudioLines, Computer, Smartphone } from 'lucide-svelte';
 </script>
 
-<section class="usage" id="for-who">
-	<h2>Применение</h2>
-	<h3>Посмотрите, как наш API может помочь Вашему бизнесу</h3>
+<section class="howitworks" id="how-works">
+	<h2>Решения для Вашего бизнеса</h2>
+	<h3>Посмотрите, как Nexara помогает реальным бизнес-задачам</h3>
 	<div class="cards">
 		<div class="card">
-			<Headset size="32"></Headset>
-			<h3 class="card-title">Анализ звонков и встреч</h3>
+			<Computer size="32"></Computer>
+			<h3 class="card-title">CRM-системы</h3>
 			<p class="card-desc">
-				Автоматически расшифровывайте и анализируйте деловые звонки и встречи, чтобы выявлять
-				ключевые моменты, задачи и улучшать качество обслуживания клиентов.
+				Автоматическая транскрибация и диаризация звонков для анализа и контроля качества.
 			</p>
+			<p class="bg-number">1</p>
 		</div>
 		<div class="card">
-			<Video size="32"></Video>
-			<h3 class="card-title">Видео в текст</h3>
+			<Smartphone size="32"></Smartphone>
+			<h3 class="card-title">Мобильные приложения</h3>
 			<p class="card-desc">
-				Интегрируйте наш API, чтобы Ваши платформы могли быстро преобразовывать аудиодорожки из
-				видео и подкастов в текст.
+				Высокопроизводительная обработка голосовых сообщений и команд в приложениях с большой
+				аудиторией.
 			</p>
+			<p class="bg-number">2</p>
 		</div>
 		<div class="card">
-			<GraduationCap size="32"></GraduationCap>
-			<h3 class="card-title">Транскрибация лекций и учебных материалов</h3>
+			<AudioLines size="32"></AudioLines>
+			<h3 class="card-title">Колл-центры</h3>
 			<p class="card-desc">
-				Добавьте поддержку автоматической расшифровки лекций и вебинаров в Ваши образовательные
-				платформы для создания текстовых материалов.
+				Аналитика речи операторов и клиентов для оптимизации скриптов и повышения удовлетворенности.
 			</p>
+			<p class="bg-number">3</p>
 		</div>
 	</div>
 </section>
 
 <style>
+	.bg-number {
+		position: absolute;
+		font-size: 48px;
+		font-weight: 450;
+		color: rgba(255, 255, 255, 0.11);
+		right: 32px;
+		top: 20px;
+	}
 	.cards {
 		display: flex;
 		flex-wrap: wrap;
@@ -49,7 +58,7 @@
 		font-weight: 480;
 	}
 	.card-desc {
-		line-height: 145%;
+		line-height: 140%;
 		font-size: 16px;
 		margin: 0;
 		text-align: start;
@@ -91,9 +100,10 @@
 		mask-composite: exclude;
 		pointer-events: none; /* Prevents interaction with the pseudo-element */
 	}
-	.usage {
+	.howitworks {
 		display: flex;
 		flex-direction: column;
-		margin-top: 156px;
+		margin-top: 72px;
+		/* margin-bottom: 164px; */
 	}
 </style>
