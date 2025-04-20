@@ -1,34 +1,35 @@
 <script>
 	import { Check, ArrowUpRight } from 'lucide-svelte';
+    import * as m from '$paraglide/messages.js';
 </script>
 
 <section class="pricing" id="pricing">
-	<h2>Тарифы</h2>
-	<h3>Выберите план, подходящий Вам</h3>
+	<h2>{m.pricing_title()}</h2>
+	<h3>{m.pricing_subtitle()}</h3>
 	<div class="cards">
 		<div class="card">
 			<div class="price">0,36 ₽/мин</div>
-			<h3 class="card-title">Гибкий</h3>
+			<h3 class="card-title">{m.pricing_flexible_title()}</h3>
 			<div class="option-wrapper">
 				<div class="option-container">
 					<Check color="#fff" size="20" />
-					<p class="option-text">Платите за то, что используете</p>
+					<p class="option-text">{m.pricing_flexible_point1()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Автоматическое масштабирование</p>
+					<p class="option-text">{m.pricing_flexible_point2()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Поддержка 57 языков</p>
+					<p class="option-text">{m.pricing_flexible_point3()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Автоматическое определение языка</p>
+					<p class="option-text">{m.pricing_flexible_point4()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Поддержка различных аудио и видеоформатов</p>
+					<p class="option-text">{m.pricing_flexible_point5()}</p>
 				</div>
 			</div>
 			<a class="try-button" href="https://app.nexara.ru/"
@@ -39,27 +40,27 @@
 			>
 		</div>
 		<div class="card">
-			<h3 class="card-title">Кастомный</h3>
+			<h3 class="card-title">{m.pricing_custom_title()}</h3>
 			<div class="option-wrapper">
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">То же самое, что и в Гибком тарифе</p>
+					<p class="option-text">{m.pricing_custom_point1()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Гибкое ценообразование при масштабировании</p>
+					<p class="option-text">{m.pricing_custom_point2()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Приоритетная поддержка</p>
+					<p class="option-text">{m.pricing_custom_point3()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Выделенные вычислительные ресурсы</p>
+					<p class="option-text">{m.pricing_custom_point4()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Модели на Ваш выбор</p>
+					<p class="option-text">{m.pricing_custom_point5()}</p>
 				</div>
 			</div>
 			<a class="light try-button" href="https://t.me/RND_RandoM"

@@ -1,33 +1,31 @@
 <script>
 	import { GraduationCap, Headset, Video } from 'lucide-svelte';
+	import * as m from '$paraglide/messages.js';
 </script>
 
 <section class="usage" id="for-who">
-	<h2>Применение</h2>
-	<h3>Посмотрите, как наш API может помочь Вашему бизнесу</h3>
+	<h2>{m.usage_title()}</h2>
+	<h3>{m.usage_subtitle()}</h3>
 	<div class="cards">
 		<div class="card">
 			<Headset size="32"></Headset>
-			<h3 class="card-title">Анализ звонков и встреч</h3>
+			<h3 class="card-title">{m.usage_step1_title()}</h3>
 			<p class="card-desc">
-				Автоматически расшифровывайте и анализируйте деловые звонки и встречи, чтобы выявлять
-				ключевые моменты, задачи и улучшать качество обслуживания клиентов.
+				{m.usage_step1_subtitle()}
 			</p>
 		</div>
 		<div class="card">
 			<Video size="32"></Video>
-			<h3 class="card-title">Видео в текст</h3>
+			<h3 class="card-title">{m.usage_step2_title()}</h3>
 			<p class="card-desc">
-				Интегрируйте наш API, чтобы Ваши платформы могли быстро преобразовывать аудиодорожки из
-				видео и подкастов в текст.
+				{m.usage_step2_subtitle()}
 			</p>
 		</div>
 		<div class="card">
 			<GraduationCap size="32"></GraduationCap>
-			<h3 class="card-title">Транскрибация лекций и учебных материалов</h3>
+			<h3 class="card-title">{m.usage_step3_title()}</h3>
 			<p class="card-desc">
-				Добавьте поддержку автоматической расшифровки лекций и вебинаров в Ваши образовательные
-				платформы для создания текстовых материалов.
+				{m.usage_step3_subtitle()}
 			</p>
 		</div>
 	</div>

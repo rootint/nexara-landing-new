@@ -1,30 +1,31 @@
 <script>
 	import { AudioLines, Braces, Code, FileMusic } from 'lucide-svelte';
+	import * as m from '$paraglide/messages.js';
 </script>
 
 <section class="howitworks" id="how-works">
-	<h2>Как это работает</h2>
-	<h3>Три простых шага к точной транскрибации ваших аудио и видео</h3>
+	<h2>{m.how_it_works_title()}</h2>
+	<h3>{m.how_it_works_subtitle()}</h3>
 	<div class="cards">
 		<div class="card">
 			<Braces size="32"></Braces>
-			<h3 class="card-title">Подключитесь к API</h3>
+			<h3 class="card-title">{m.how_it_works_step1_title()}</h3>
 			<p class="card-desc">
-				Интегрируйте наш OpenAI-совместимый API — просто замените одну строку кода.
+				{m.how_it_works_step1_subtitle()}
 			</p>
 			<p class="bg-number">1</p>
 		</div>
 		<div class="card">
 			<FileMusic size="32"></FileMusic>
-			<h3 class="card-title">Отправьте файлы</h3>
-			<p class="card-desc">Загружайте файлы в любом формате для транскрибации. Размер файла - до 1 ГБ.</p>
+			<h3 class="card-title">{m.how_it_works_step2_title()}</h3>
+			<p class="card-desc">{m.how_it_works_step2_subtitle()}</p>
 			<p class="bg-number">2</p>
 		</div>
 		<div class="card">
 			<AudioLines size="32"></AudioLines>
-			<h3 class="card-title">Получите текст</h3>
+			<h3 class="card-title">{m.how_it_works_step3_title()}</h3>
 			<p class="card-desc">
-				В течение нескольких секунд вы получите точную транскрибацию.
+				{m.how_it_works_step3_subtitle()}
 			</p>
 			<p class="bg-number">3</p>
 		</div>
@@ -73,7 +74,7 @@
 		flex: 1 0 300px;
 		background-color: rgba(255, 255, 255, 0.015);
 		backdrop-filter: blur(24px);
-        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+		transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
 			skew(0deg, 0deg);
 		transform-style: preserve-3d;
 	}

@@ -1,12 +1,13 @@
 <script>
 	import MainButton from './MainButton.svelte';
 	import { ArrowUpRight } from 'lucide-svelte';
+    import * as m from '$paraglide/messages.js';
 </script>
 
 <section class="cta">
 	<div class="text-container">
-		<h2>Присоединяйтесь к нам!</h2>
-		<p>Попробуйте API и убедитесь во всем сами.</p>
+		<h2>{m.cta_title()}</h2>
+		<p>{m.cta_subtitle()}</p>
 	</div>
 	<a
 		href="https://app.nexara.ru"

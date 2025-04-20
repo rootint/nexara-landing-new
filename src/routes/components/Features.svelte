@@ -1,11 +1,12 @@
 <script>
 	import russia from '$lib/assets/russia.svg';
 	import { Navigation } from 'lucide-svelte';
+    import * as m from '$paraglide/messages.js';
 </script>
 
 <section class="features" id="features">
-	<h2>Преимущества</h2>
-	<h3>Узнайте, почему вам стоит попробовать наш API сегодня</h3>
+	<h2>{m.advantages_title()}</h2>
+	<h3>{m.advantages_subtitle()}</h3>
 	<div class="cards">
 		<div class="card-col">
 			<div class="card">
@@ -24,8 +25,8 @@
 						<p class="bar-text">1.5 минуты</p>
 					</div>
 				</div>
-				<h3 class="card-title">Высокая скорость</h3>
-				<p class="card-desc">До 9 раз быстрее OpenAI, и до 6 раз быстрее Yandex SpeechKit.</p>
+				<h3 class="card-title">{m.advantages_highspeed_title()}</h3>
+				<p class="card-desc">{m.advantages_highspeed_subtitle()}</p>
 			</div>
 			<div style="height: 32px;"></div>
 			<div class="card">
@@ -39,8 +40,8 @@
 						<br />&nbsp;&nbsp;&nbsp;&nbsp;api_key="ВАШ_КЛЮЧ", <br />)
 					</div>
 				</div>
-				<h3 class="card-title">Легкая интеграция</h3>
-				<p class="card-desc">Забудьте о сложностях перехода. Одна строка кода – и вы с нами.</p>
+				<h3 class="card-title">{m.advantages_easyintegration_title()}</h3>
+				<p class="card-desc">{m.advantages_easyintegration_subtitle()}</p>
 			</div>
 		</div>
 		<div class="card-col">
@@ -68,15 +69,15 @@
 						<p class="bar-text">17%</p>
 					</div>
 				</div>
-				<h3 class="card-title">Точность</h3>
-				<p class="card-desc">Точность транскрибации как у лучших моделей в мире.</p>
+				<h3 class="card-title">{m.advantages_accuracy_title()}</h3>
+				<p class="card-desc">{m.advantages_accuracy_subtitle()}</p>
 			</div>
 			<div style="height: 32px;"></div>
 			<div class="card">
 				<img src={russia} class="russia-img" height="230" />
 				<Navigation size="32" style="z-index: 100;"></Navigation>
-				<h3 class="card-title">Российский сервис</h3>
-				<p class="card-desc">Разработан и размещен в России, не подвержен санкциям.</p>
+				<h3 class="card-title">{m.advantages_russianservice_title()}</h3>
+				<p class="card-desc">{m.advantages_russianservice_subtitle()}</p>
 			</div>
 		</div>
 	</div>

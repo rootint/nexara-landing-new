@@ -8,14 +8,16 @@
 	>
 		<button class="cta-btn">
 			<div class="row">
-				<p>Попробовать</p>
+				<!-- <p>Попробовать</p> -->
+                <p>Try</p>
 				<div class="icon">
 					<ArrowUpRight color="#111"></ArrowUpRight>
 				</div>
 			</div>
 		</button>
 	</a>
-	<p class="subtitle">0,36 ₽/мин или дешевле</p>
+	<!-- <p class="subtitle">0,36 ₽/мин или дешевле</p> -->
+    <p class="subtitle">$0.0036 / min or cheaper</p>
 </div>
 
 <style>

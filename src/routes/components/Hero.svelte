@@ -1,7 +1,5 @@
 <script>
 	import * as m from '$paraglide/messages.js';
-	import {getLocale} from '$paraglide/runtime';
-	import {setLocale} from '$paraglide/runtime';
 	
 	import MainButton from './MainButton.svelte';
 
@@ -74,15 +72,6 @@
 	<div class="animate">
 		<MainButton></MainButton>
 	</div>
-	<!-- svelte-ignore a11y_consider_explicit_label -->
-	<button on:click={() => {
-		const locale = getLocale()
-		if (locale === 'ru') {
-			setLocale('en')
-		} else {
-			setLocale('ru')
-		}
-	}}>change</button>
 </section>
 
 <style>
