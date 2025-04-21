@@ -1,42 +1,45 @@
 <script>
-	import { ArrowUpRight } from 'lucide-svelte';
+	import * as m from '$paraglide/messages.js';
 </script>
 
-<div class="button-col">
-	<a
-		href="https://app.nexara.ru"
-	>
+<div class="button-row">
+	<a href="https://app.nexara.ru">
 		<button class="cta-btn">
 			<div class="row">
-				<!-- <p>Попробовать</p> -->
-                <p>Try</p>
-				<div class="icon">
-					<ArrowUpRight color="#111"></ArrowUpRight>
-				</div>
+				<p>{m.hero_try_button()}</p>
+			</div>
+		</button>
+	</a>
+	<a href="https://t.me/RND_RandoM">
+		<button class="contact-btn">
+			<div class="row">
+				<p class="contact">{m.hero_contact_us()}</p>
 			</div>
 		</button>
 	</a>
 	<!-- <p class="subtitle">0,36 ₽/мин или дешевле</p> -->
-    <p class="subtitle">$0.0036 / min or cheaper</p>
 </div>
 
 <style>
-    .button-col {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-	.subtitle {
-		color: #aaa;
-		margin-right: 0;
-		font-weight: 300;
-		font-size: 16px;
-		text-align: center;
-		margin-top: 12px;
+	.button-row {
+		display: flex;
+		gap: 32px;
+		align-items: center;
+	}
+	.contact {
+		color: #fff;
+	}
+	.contact-btn {
+		background-color: rgba(255, 255, 255, 0);
+		padding: 16px 36px;
+		border-radius: 12px;
+		border: rgba(255, 255, 255, 0.15) 1px solid;
+		cursor: pointer;
+		/* min-width: 274px; */
 	}
 	.cta-btn {
 		background-color: #fff;
-		padding: 22px 42px;
+		padding: 16px 36px;
 		border-radius: 12px;
 		border: none;
 		cursor: pointer;
@@ -52,7 +55,6 @@
 		margin-top: 2px;
 	}
 	p {
-		margin-right: 12px;
 		color: #111;
 		font-weight: 450;
 		font-size: 20px;
@@ -69,19 +71,33 @@
 	}
 
 	@media (max-width: 1200px) {
-		.cta-btn {
+		.cta-btn,
+		.contact-btn {
 			padding: 20px 28px;
 			min-width: unset;
 		}
 	}
 
 	@media (max-width: 800px) {
+		.button-row {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			gap: 24px;
+		}
 		.cta-btn {
+			width: 100%;
+		}
+		.contact-btn {
+			width: 100%;
+		}
+		.cta-btn,
+		.contact-btn {
 			padding: 16px 24px;
 			/* min-width: 211px; */
 		}
 		p {
-			margin-right: 6px;
+			/* margin-right: 6px; */
 			color: #111;
 			font-size: 16px;
 			background-color: none;

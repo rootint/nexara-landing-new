@@ -1,5 +1,5 @@
 <script>
-	import { AudioLines, Braces, Code, FileMusic } from 'lucide-svelte';
+	import { AudioLines, Braces, Code, Computer, FileMusic, Smartphone } from 'lucide-svelte';
 	import * as m from '$paraglide/messages.js';
 </script>
 
@@ -8,7 +8,7 @@
 	<h3>{m.how_it_works_subtitle()}</h3>
 	<div class="cards">
 		<div class="card">
-			<Braces size="32"></Braces>
+			<Computer size="32"></Computer>
 			<h3 class="card-title">{m.how_it_works_step1_title()}</h3>
 			<p class="card-desc">
 				{m.how_it_works_step1_subtitle()}
@@ -16,7 +16,7 @@
 			<p class="bg-number">1</p>
 		</div>
 		<div class="card">
-			<FileMusic size="32"></FileMusic>
+			<Smartphone size="32"></Smartphone>
 			<h3 class="card-title">{m.how_it_works_step2_title()}</h3>
 			<p class="card-desc">{m.how_it_works_step2_subtitle()}</p>
 			<p class="bg-number">2</p>

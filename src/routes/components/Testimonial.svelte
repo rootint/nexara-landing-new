@@ -91,5 +91,9 @@
             margin-top: 24px;
             text-align: center;
         }
+        .testimonial {
+            margin-top: 64px;
+            margin-bottom: 64px;
+        }
 	}
 </style>

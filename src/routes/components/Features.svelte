@@ -1,153 +1,281 @@
 <script>
+	import {
+		AudioLines,
+		CircleDollarSign,
+		Cloud,
+		Code,
+		Globe,
+		Navigation,
+		Server,
+		ShieldCheck,
+		Subtitles,
+		Timer
+	} from 'lucide-svelte';
 	import russia from '$lib/assets/russia.svg';
-	import { Navigation } from 'lucide-svelte';
-    import * as m from '$paraglide/messages.js';
+	import world from '$lib/assets/world.svg';
+	import * as m from '$paraglide/messages.js';
+	import { getLocale } from '$paraglide/runtime';
 </script>
 
 <section class="features" id="features">
 	<h2>{m.advantages_title()}</h2>
 	<h3>{m.advantages_subtitle()}</h3>
-	<div class="cards">
-		<div class="card-col">
-			<div class="card">
-				<p class="top-desc">транскрибация 30 минут аудио</p>
+	<div class="bento-grid">
+		{#if getLocale() === 'ru'}
+			<div class="card speed">
+				<p class="top-desc">{m.advantages_highspeed_top_text()}</p>
 				<div class="bars-container">
-					<div class="result-row">
-						<div class="bar-nexara"style="width: 100px;">Nexara</div>
-						<p class="bar-text-nexara">10 секунд</p>
+					<div class="speed-bar">
+						<div class="narrow-bar-container">
+							<div class="narrow-bar nexara" style="width: 100%" />
+							<p class="narrow-bar-text nexara-text">Nexara</p>
+						</div>
+						<p class="x-text nexara-text">240x</p>
 					</div>
-					<div class="result-row">
-						<div class="bar" style="width: 350px;">Yandex SpeechKit</div>
-						<p class="bar-text">1 минута</p>
+					<div class="speed-bar">
+						<div class="narrow-bar-container">
+							<div class="narrow-bar" style="width: 150px" />
+							<p class="narrow-bar-text">OpenAI API</p>
+						</div>
+						<p class="x-text">35x</p>
 					</div>
-					<div class="result-row">
-						<div class="bar" style="width: 400px;">OpenAI</div>
-						<p class="bar-text">1.5 минуты</p>
+					<div class="speed-bar">
+						<div class="narrow-bar-container">
+							<div class="narrow-bar" style="width: 135px" />
+							<p class="narrow-bar-text">Yandex SpeechKit</p>
+						</div>
+						<p class="x-text">30x</p>
+					</div>
+					<div class="speed-bar">
+						<div class="narrow-bar-container">
+							<div class="narrow-bar" style="width: 50px" />
+							<p class="narrow-bar-text">Sber SaluteSpeech</p>
+						</div>
+						<p class="x-text">13x</p>
 					</div>
 				</div>
 				<h3 class="card-title">{m.advantages_highspeed_title()}</h3>
 				<p class="card-desc">{m.advantages_highspeed_subtitle()}</p>
 			</div>
-			<div style="height: 32px;"></div>
-			<div class="card">
-				<div class="code-container">
-					<div class="line-numbers">1<br />2<br />3<br />4<br />5<br />6<br /></div>
-					<div class="code">
-						from openai import OpenAI<br /><br />client = OpenAI(<br />&nbsp;&nbsp;&nbsp;&nbsp;<span
-							style="font-weight: 550; font-family: 'Fira Code', monospace;"
-							>base_url="https://api.nexara.ru/api/v1",</span
-						>
-						<br />&nbsp;&nbsp;&nbsp;&nbsp;api_key="ВАШ_КЛЮЧ", <br />)
+		{:else if getLocale() === 'en'}
+			<div class="card speed">
+				<p class="top-desc">{m.advantages_highspeed_top_text()}</p>
+				<div class="bars-container">
+					<div class="speed-bar">
+						<div class="narrow-bar-container">
+							<div class="narrow-bar nexara" style="width: 100%" />
+							<p class="narrow-bar-text nexara-text">Nexara</p>
+						</div>
+						<p class="x-text nexara-text">240x</p>
+					</div>
+					<div class="speed-bar">
+						<div class="narrow-bar-container">
+							<div class="narrow-bar" style="width: 60%" />
+							<p class="narrow-bar-text">Fireworks Large-v3</p>
+						</div>
+						<p class="x-text">150x</p>
+					</div>
+					<div class="speed-bar">
+						<div class="narrow-bar-container">
+							<div class="narrow-bar" style="width: 40%" />
+							<p class="narrow-bar-text">AssemblyAI</p>
+						</div>
+						<p class="x-text">100x</p>
+					</div>
+					<div class="speed-bar">
+						<div class="narrow-bar-container">
+							<div class="narrow-bar" style="width: 20%" />
+							<p class="narrow-bar-text">OpenAI API</p>
+						</div>
+						<p class="x-text">35x</p>
 					</div>
 				</div>
-				<h3 class="card-title">{m.advantages_easyintegration_title()}</h3>
-				<p class="card-desc">{m.advantages_easyintegration_subtitle()}</p>
+				<h3 class="card-title">{m.advantages_highspeed_title()}</h3>
+				<p class="card-desc">{m.advantages_highspeed_subtitle()}</p>
 			</div>
+		{/if}
+		<div class="card accuracy">
+			<p class="top-desc">{m.advantages_accuracy_top_text()}</p>
+			<div class="bars-container">
+				<div class="result-row">
+					<div class="bar-nexara" style="width: 150px;">Nexara</div>
+					<p class="bar-text-nexara">27%</p>
+				</div>
+				<div class="result-row">
+					<div class="bar" style="width: 170px;">Whisper Large-v3</div>
+					<p class="bar-text">31%</p>
+				</div>
+				<div class="result-row">
+					<div class="bar" style="width: 190px;">OpenAI API</div>
+					<p class="bar-text">35%</p>
+				</div>
+				{#if getLocale() === 'ru'}
+					<div class="result-row">
+						<div class="bar" style="width: 260px;">Yandex SpeechKit</div>
+						<p class="bar-text">43%</p>
+					</div>
+				{:else if getLocale() === 'en'}
+					<div class="result-row">
+						<div class="bar" style="width: 240px;">AssemblyAI</div>
+						<p class="bar-text">53%</p>
+					</div>
+				{/if}
+			</div>
+			<h3 class="card-title">{m.advantages_accuracy_title()}</h3>
+			<p class="card-desc">{m.advantages_accuracy_subtitle()}</p>
 		</div>
-		<div class="card-col">
-			<div class="card">
-				<p class="top-desc">Word Error Rate (%)</p>
-				<div class="bars-container-small">
-					<div class="result-row">
-						<div class="bar-nexara small" style="width: 220px;">Nexara</div>
-						<p class="bar-text-nexara">11%</p>
-					</div>
-					<div class="result-row">
-						<div class="bar small" style="width: 220px;">Whisper v3</div>
-						<p class="bar-text">11%</p>
-					</div>
-					<div class="result-row">
-						<div class="bar small" style="width: 220px;">OpenAI</div>
-						<p class="bar-text">11%</p>
-					</div>
-					<div class="result-row">
-						<div class="bar small" style="width: 250px;">Distil Whisper</div>
-						<p class="bar-text">13%</p>
-					</div>
-					<div class="result-row">
-						<div class="bar small" style="width: 300px;">Whisper (S)</div>
-						<p class="bar-text">17%</p>
-					</div>
+		<div class="card price">
+			<CircleDollarSign></CircleDollarSign>
+			<h3 class="card-title">{m.advantages_price_title()}</h3>
+			<p class="card-desc">{m.advantages_price_subtitle()}</p>
+		</div>
+		<div class="card integration">
+			<Code></Code>
+			<h3 class="card-title">{m.advantages_easyintegration_title()}</h3>
+			<p class="card-desc">{m.advantages_easyintegration_subtitle()}</p>
+		</div>
+		<div class="card russia">
+			{#if getLocale() === 'ru'}
+				<img src={russia} class="russia-img" alt="Map of Russia" />
+				<Navigation></Navigation>
+			{:else if getLocale() === 'en'}
+				<img src={world} class="russia-img" alt="World Map" />
+				<Globe></Globe>
+			{/if}
+			<h3 class="card-title">{m.advantages_russianservice_title()}</h3>
+			<p class="card-desc">
+				{m.advantages_russianservice_subtitle()}
+			</p>
+		</div>
+		<div class="card flexibility">
+			<div class="feature-container">
+				<div class="feature">
+					<ShieldCheck></ShieldCheck>
 				</div>
-				<h3 class="card-title">{m.advantages_accuracy_title()}</h3>
-				<p class="card-desc">{m.advantages_accuracy_subtitle()}</p>
+				<div class="feature">
+					<Server></Server>
+				</div>
+				<div class="feature">
+					<Cloud></Cloud>
+				</div>
 			</div>
-			<div style="height: 32px;"></div>
-			<div class="card">
-				<img src={russia} class="russia-img" height="230" />
-				<Navigation size="32" style="z-index: 100;"></Navigation>
-				<h3 class="card-title">{m.advantages_russianservice_title()}</h3>
-				<p class="card-desc">{m.advantages_russianservice_subtitle()}</p>
+			<h3 class="card-title">{m.advantages_flexible_title()}</h3>
+			<p class="card-desc">{m.advantages_flexible_subtitle()}</p>
+		</div>
+		<div class="card functions">
+			<div class="feature-container">
+				<div class="feature">
+					<AudioLines></AudioLines>
+				</div>
+				<div class="feature">
+					<Subtitles></Subtitles>
+				</div>
+				<div class="feature">
+					<Timer></Timer>
+				</div>
 			</div>
+			<h3 class="card-title">{m.advantages_functionality_title()}</h3>
+			<p class="card-desc">{m.advantages_functionality_subtitle()}</p>
 		</div>
 	</div>
 </section>
 
 <style>
-	.card {
-		position: relative;
+	.russia-img {
+		width: 100%;
+	}
+	.feature {
+		height: 56px;
+		width: 56px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		/* padding: 16px; */
+		background-color: #222;
 		border-radius: 12px;
-		padding: 32px;
+		border: rgba(255, 255, 255, 0.05) solid 1px;
+	}
+	.feature-container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+	}
+	.nexara {
+		background-color: #fff !important;
+	}
+	.nexara-text {
+		color: #fff !important;
+		background-color: transparent !important;
+		font-weight: 450;
+	}
+	.narrow-bar-container {
 		display: flex;
 		flex-direction: column;
-		align-items: start;
-		justify-content: end;
-		box-sizing: border-box;
-		flex: 1 0 300px;
-		background-color: rgba(255, 255, 255, 0.015);
-		backdrop-filter: blur(24px);
-		min-height: 296px;
-		min-width: 567px;
-		max-width: 968px;
-		transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-			skew(0deg, 0deg);
-		transform-style: preserve-3d;
+		flex-grow: 1;
+		justify-content: start;
+		/* align-items: start; */
 	}
-	.russia-img {
-		position: absolute;
-		right: 32px;
-	}
-	.code-container {
-		width: 100%;
-		padding: 16px;
+	.narrow-bar {
+		background-color: #444;
 		border-radius: 12px;
-		background-color: #202020;
+		margin-bottom: 8px;
+		height: 10px;
+		border: none;
+	}
+	.narrow-bar-text {
+		color: #aaa;
+	}
+	.x-text {
 		display: flex;
-	}
-	.line-numbers {
-		margin-right: 16px;
-		font-family: 'Fira Code', monospace;
+		flex-shrink: 0;
+		font-size: 32px;
+		font-weight: 400;
+		margin: 0;
+		padding: 0;
+		line-height: 80%;
 		color: #777;
-		min-width: 8px;
 	}
-	.code {
-		font-family: 'Fira Code', monospace;
-		color: #fdfdfd;
+	.speed-bar {
+		display: flex;
+		width: 100%;
+		gap: 24px;
+		justify-content: start;
 	}
-	.card-col {
-		box-sizing: border-box;
-		flex: 1 0;
+	.speed {
+		grid-column: span 7;
+		grid-row: span 2;
 	}
-	.small {
-		padding: 4px 16px !important;
+	.accuracy {
+		grid-column: span 5;
+		grid-row: span 2;
+	}
+	.price,
+	.integration {
+		grid-column: span 4;
+		grid-row: span 1;
+	}
+	.flexibility,
+	.functions {
+		grid-column: span 4;
+		grid-row: span 2;
+	}
+	.russia {
+		grid-column: span 4;
+		grid-row: span 3;
 	}
 	.bars-container {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
-		margin-top: 16px;
-	}
-	.bars-container-small {
-		display: flex;
-		flex-direction: column;
-		gap: 16px;
-		margin-top: 16px;
+		gap: 24px;
+		margin-top: 20px;
+		width: 100%;
 	}
 	.bar {
 		border-radius: 12px;
 		padding: 8px 16px;
 		color: #fff;
-		background-color: #222;
+		background-color: #282828;
 	}
 	.bar-nexara {
 		border-radius: 12px;
@@ -175,12 +303,6 @@
 		padding: 0;
 		color: #777;
 	}
-	.cards {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 32px;
-		margin-top: 48px;
-	}
 	.card-title {
 		margin-top: 32px;
 		margin-bottom: 20px;
@@ -197,6 +319,29 @@
 		padding: 0;
 		z-index: 100;
 		color: var(--text-3);
+	}
+	.bento-grid {
+		display: grid;
+		gap: 32px;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: auto;
+		margin-bottom: 64px;
+		margin-top: 64px;
+	}
+	.card {
+		position: relative;
+		border-radius: 12px;
+		padding: 32px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: end;
+		box-sizing: border-box;
+		background-color: rgba(255, 255, 255, 0.015);
+		backdrop-filter: blur(24px);
+		transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+			skew(0deg, 0deg);
+		transform-style: preserve-3d;
 	}
 	.card::before {
 		content: '';
@@ -218,52 +363,124 @@
 		mask-composite: exclude;
 		pointer-events: none; /* Prevents interaction with the pseudo-element */
 	}
+
 	.features {
 		display: flex;
 		flex-direction: column;
-		margin-top: 156px;
+		margin-top: 128px;
 	}
 
-	@media (max-width: 1224px) {
-		.cards {
+	@media (max-width: 1200px) {
+		.bento-grid {
+			display: grid;
+			gap: 24px;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: auto;
+			margin-bottom: 96px;
+			margin-top: 48px;
+		}
+		.speed {
+			grid-column: span 7;
+			grid-row: span 2;
+		}
+		.accuracy {
+			grid-column: span 5;
+			grid-row: span 2;
+		}
+		.price,
+		.integration {
+			grid-column: span 4;
+			grid-row: span 1;
+		}
+		.flexibility,
+		.functions {
+			grid-column: span 4;
+			grid-row: span 2;
+		}
+		.russia {
+			grid-column: span 4;
+			grid-row: span 3;
+		}
+	}
+
+	@media (max-width: 968px) {
+		.bento-grid {
+			display: grid;
+			gap: 16px;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: auto;
+			margin-bottom: 96px;
+			margin-top: 48px;
+		}
+		.speed {
+			grid-column: span 12;
+			grid-row: span 2;
+		}
+		.accuracy {
+			grid-column: span 8;
+			grid-row: span 2;
+		}
+		.price,
+		.integration {
+			grid-column: span 4;
+			grid-row: span 1;
+		}
+		.flexibility,
+		.functions {
+			grid-column: span 6;
+			grid-row: span 2;
+		}
+		.russia {
+			grid-column: span 12;
+			grid-row: span 3;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.bento-grid {
+			display: flex;
 			flex-direction: column;
-			align-items: center;
+			gap: 16px;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: auto;
+			margin-bottom: 96px;
+			margin-top: 48px;
 		}
-	}
-	@media (max-width: 800px) {
-		.features {
-			width: 100%;
+		.speed {
+			grid-column: span 12;
+			grid-row: span 2;
 		}
-		.cards {
-			width: 100%;
-			min-width: unset;
+		.accuracy {
+			grid-column: span 8;
+			grid-row: span 2;
 		}
-		.card-col {
-			width: 100%;
+		.price,
+		.integration {
+			grid-column: span 4;
+			grid-row: span 1;
 		}
-		.card {
-			width: 100%;
-			max-width: unset;
-			min-width: unset;
+		.flexibility,
+		.functions {
+			grid-column: span 6;
+			grid-row: span 2;
 		}
-		.bar {
-			max-width: 200px;
-		}
-		.bar-nexara {
-			max-width: 200px;
+		.russia {
+			grid-column: span 12;
+			grid-row: span 3;
 		}
 
-		.bars-container-small > .result-row > .bar-nexara {
-			max-width: 150px;
+		.narrow-bar.nexara {
+			max-width: 100% !important;
 		}
-		.bars-container-small > .result-row > .bar {
-			max-width: 150px;
+
+		.narrow-bar {
+			max-width: 100px;
 		}
-		.bars-container-small > .result-row:last-child > .bar {
-			max-width: 200px;
-		}
-		.bars-container-small > .result-row:nth-last-child(2) > .bar {
-			max-width: 170px;
+
+		.features {
+			display: flex;
+			flex-direction: column;
+			margin-top: 72px;
 		}
 	}
 </style>

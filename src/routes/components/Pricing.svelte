@@ -1,14 +1,16 @@
 <script>
 	import { Check, ArrowUpRight } from 'lucide-svelte';
-    import * as m from '$paraglide/messages.js';
+	import * as m from '$paraglide/messages.js';
 </script>
 
 <section class="pricing" id="pricing">
-	<h2>{m.pricing_title()}</h2>
+	<h2>
+		{m.pricing_title()}
+	</h2>
 	<h3>{m.pricing_subtitle()}</h3>
 	<div class="cards">
 		<div class="card">
-			<div class="price">0,36 ₽/мин</div>
+			<div class="price">{m.pricing_flexible_price()}</div>
 			<h3 class="card-title">{m.pricing_flexible_title()}</h3>
 			<div class="option-wrapper">
 				<div class="option-container">
@@ -31,42 +33,59 @@
 					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">{m.pricing_flexible_point5()}</p>
 				</div>
+				<div class="option-container">
+					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<p class="option-text">{m.pricing_flexible_point6()}</p>
+				</div>
+				<div class="option-container">
+					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<p class="option-text">{m.pricing_flexible_point7()}</p>
+				</div>
 			</div>
 			<a class="try-button" href="https://app.nexara.ru/"
 				><div class="button-row">
-					<p class="btn-text">Начать сейчас</p>
-					<ArrowUpRight color="#111" size="20"></ArrowUpRight>
+					<p class="btn-text">{m.pricing_flexible_button()}</p>
+					<!-- <ArrowUpRight color="#111" size="20"></ArrowUpRight> -->
 				</div></a
 			>
 		</div>
 		<div class="card">
-			<h3 class="card-title">{m.pricing_custom_title()}</h3>
+			<h3 class="card-title">{m.pricing_enterprise_title()}</h3>
 			<div class="option-wrapper">
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">{m.pricing_custom_point1()}</p>
+					<p class="option-text">{m.pricing_enterprise_point1()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">{m.pricing_custom_point2()}</p>
+					<p class="option-text">{m.pricing_enterprise_point2()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">{m.pricing_custom_point3()}</p>
+					<p class="option-text">{m.pricing_enterprise_point3()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">{m.pricing_custom_point4()}</p>
+					<p class="option-text">{m.pricing_enterprise_point4()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">{m.pricing_custom_point5()}</p>
+					<p class="option-text">{m.pricing_enterprise_point5()}</p>
 				</div>
+				<div class="option-container">
+					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<p class="option-text">{m.pricing_enterprise_point6()}</p>
+				</div>
+				<!-- <div class="option-container">
+					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<p class="option-text">Модели на Ваш выбор</p>
+				</div> -->
 			</div>
+			<div style="flex: 1;"></div>
 			<a class="light try-button" href="https://t.me/RND_RandoM"
 				><div class="button-row">
-					<p class="btn-text light no-border">Связаться с нами</p>
-					<ArrowUpRight color="#fff" size="20"></ArrowUpRight>
+					<p class="btn-text light no-border">{m.pricing_enterprise_button()}</p>
+					<!-- <ArrowUpRight color="#fff" size="20"></ArrowUpRight> -->
 				</div></a
 			>
 		</div>
@@ -186,5 +205,12 @@
 		display: flex;
 		flex-direction: column;
 		margin-top: 156px;
+	}
+
+	@media (max-width: 768px) {
+		.pricing {
+			display: flex;
+			margin-top: 72px;
+		}
 	}
 </style>

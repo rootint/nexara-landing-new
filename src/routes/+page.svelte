@@ -1,5 +1,7 @@
 <script>
 	import * as m from '$paraglide/messages.js';
+	import { getLocale } from '$paraglide/runtime';
+	import { setLocale } from '$paraglide/runtime';
 
 	import Hero from './components/Hero.svelte';
 	import HowItWorks from './components/HowItWorks.svelte';
@@ -12,6 +14,8 @@
 	import sergey from '$lib/assets/sergey.jpeg';
 	import egor from '$lib/assets/egor.jpeg';
 	import vasil from '$lib/assets/vasil.jpg';
+	import Reviews from './components/Reviews.svelte';
+	import ReadAboutUs from './components/ReadAboutUs.svelte';
 </script>
 
 <svelte:head>
@@ -45,17 +49,22 @@
 ></Testimonial>
 <HowItWorks></HowItWorks>
 <Features></Features>
-<Usage></Usage>
-<Testimonial
+<!-- <Usage></Usage> -->
+<Reviews></Reviews>
+<!-- <Testimonial
 	text={m.testimonial_egor()}
 	subtitle="{m.testimonial_egor_name()}, Transcribator"
 	image={egor}
-></Testimonial>
+></Testimonial> -->
+
 <Pricing></Pricing>
-<Testimonial
+{#if getLocale() === 'ru'}
+	<ReadAboutUs></ReadAboutUs>
+{/if}
+<!-- <Testimonial
 	text={m.testimonial_vasil()}
 	subtitle="{m.testimonial_vasil_name()}, WhyNote"
 	image={vasil}
-></Testimonial>
+></Testimonial> -->
 <Cta></Cta>
 <!-- <Footer></Footer> -->

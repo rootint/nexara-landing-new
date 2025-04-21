@@ -14,7 +14,7 @@
 	>
 		<button class="cta-btn">
 			<div class="row">
-				<p class="button-text">Попробовать API</p>
+				<p class="button-text">{m.cta_button()}</p>
 				<div class="icon">
 					<ArrowUpRight color="#fff"></ArrowUpRight>
 				</div>
