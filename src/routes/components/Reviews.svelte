@@ -1,37 +1,49 @@
 <script>
 	import { GraduationCap, Headset, Video } from 'lucide-svelte';
+	import egor from '$lib/assets/egor.jpeg';
+	import vasil from '$lib/assets/vasil.jpg';
+	import ruslan from '$lib/assets/ruslan.jpg';
 	import * as m from '$paraglide/messages.js';
 </script>
 
 <section class="usage" id="for-who">
-	<h2>{m.usage_title()}</h2>
-	<h3>{m.usage_subtitle()}</h3>
+	<h2>{m.reviews_title()}</h2>
+	<h3>{m.reviews_subtitle()}</h3>
 	<div class="cards">
 		<div class="card">
-			<Headset size="32"></Headset>
-			<h3 class="card-title">{m.usage_step1_title()}</h3>
+			<!-- <Headset size="32"></Headset> -->
+			<img src={ruslan} width="108" />
+			<h3 class="card-title">@rousgg, Glabix</h3>
 			<p class="card-desc">
-				{m.usage_step1_subtitle()}
+				{m.reviews_ruslan_text()}
 			</p>
 		</div>
 		<div class="card">
-			<Video size="32"></Video>
-			<h3 class="card-title">{m.usage_step2_title()}</h3>
+			<!-- <Video size="32"></Video> -->
+			<img src={vasil} width="108" />
+			<h3 class="card-title">
+				{m.reviews_vasil_name()}
+			</h3>
 			<p class="card-desc">
-				{m.usage_step2_subtitle()}
+				{m.reviews_vasil_text()}
 			</p>
 		</div>
 		<div class="card">
-			<GraduationCap size="32"></GraduationCap>
-			<h3 class="card-title">{m.usage_step3_title()}</h3>
+			<!-- <Headset size="32"></Headset> -->
+			<img src={egor} width="108" />
+			<h3 class="card-title">@egorfing, Transcribator</h3>
 			<p class="card-desc">
-				{m.usage_step3_subtitle()}
+				{m.reviews_egor_text()}
 			</p>
 		</div>
 	</div>
 </section>
 
 <style>
+	img {
+		min-width: 108px;
+		border-radius: 12px;
+	}
 	.cards {
 		display: flex;
 		flex-wrap: wrap;
@@ -92,14 +104,13 @@
 	.usage {
 		display: flex;
 		flex-direction: column;
-		margin-top: 128px;
+		margin-top: 156px;
 	}
 
 	@media (max-width: 768px) {
 		.usage {
 			display: flex;
-			flex-direction: column;
-			margin-top: 72px !important;
+			margin-top: 72px;
 		}
 	}
 </style>

@@ -10,7 +10,7 @@
 <Parallax></Parallax>
 
 <div class="app">
-	<ScrollableHeader></ScrollableHeader>
+	<!-- <ScrollableHeader></ScrollableHeader> -->
 	<Header></Header>
 	<main>
 		<slot />

@@ -1,71 +1,91 @@
 <script>
 	import { Check, ArrowUpRight } from 'lucide-svelte';
+	import * as m from '$paraglide/messages.js';
 </script>
 
 <section class="pricing" id="pricing">
-	<h2>Тарифы</h2>
-	<h3>Выберите план, подходящий Вам</h3>
+	<h2>
+		{m.pricing_title()}
+	</h2>
+	<h3>{m.pricing_subtitle()}</h3>
 	<div class="cards">
 		<div class="card">
-			<div class="price">0,36 ₽/мин</div>
-			<h3 class="card-title">Гибкий</h3>
+			<div class="price">{m.pricing_flexible_price()}</div>
+			<h3 class="card-title">{m.pricing_flexible_title()}</h3>
 			<div class="option-wrapper">
 				<div class="option-container">
 					<Check color="#fff" size="20" />
-					<p class="option-text">Платите за то, что используете</p>
+					<p class="option-text">{m.pricing_flexible_point1()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Автоматическое масштабирование</p>
+					<p class="option-text">{m.pricing_flexible_point2()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Поддержка 57 языков</p>
+					<p class="option-text">{m.pricing_flexible_point3()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Автоматическое определение языка</p>
+					<p class="option-text">{m.pricing_flexible_point4()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Поддержка различных аудио и видеоформатов</p>
+					<p class="option-text">{m.pricing_flexible_point5()}</p>
+				</div>
+				<div class="option-container">
+					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<p class="option-text">{m.pricing_flexible_point6()}</p>
+				</div>
+				<div class="option-container">
+					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<p class="option-text">{m.pricing_flexible_point7()}</p>
 				</div>
 			</div>
 			<a class="try-button" href="https://app.nexara.ru/"
 				><div class="button-row">
-					<p class="btn-text">Начать сейчас</p>
-					<ArrowUpRight color="#111" size="20"></ArrowUpRight>
+					<p class="btn-text">{m.pricing_flexible_button()}</p>
+					<!-- <ArrowUpRight color="#111" size="20"></ArrowUpRight> -->
 				</div></a
 			>
 		</div>
 		<div class="card">
-			<h3 class="card-title">Кастомный</h3>
+			<h3 class="card-title">{m.pricing_enterprise_title()}</h3>
 			<div class="option-wrapper">
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">То же самое, что и в Гибком тарифе</p>
+					<p class="option-text">{m.pricing_enterprise_point1()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Гибкое ценообразование при масштабировании</p>
+					<p class="option-text">{m.pricing_enterprise_point2()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Приоритетная поддержка</p>
+					<p class="option-text">{m.pricing_enterprise_point3()}</p>
 				</div>
 				<div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">Выделенные вычислительные ресурсы</p>
+					<p class="option-text">{m.pricing_enterprise_point4()}</p>
 				</div>
 				<div class="option-container">
+					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<p class="option-text">{m.pricing_enterprise_point5()}</p>
+				</div>
+				<div class="option-container">
+					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<p class="option-text">{m.pricing_enterprise_point6()}</p>
+				</div>
+				<!-- <div class="option-container">
 					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">Модели на Ваш выбор</p>
-				</div>
+				</div> -->
 			</div>
+			<div style="flex: 1;"></div>
 			<a class="light try-button" href="https://t.me/RND_RandoM"
 				><div class="button-row">
-					<p class="btn-text light no-border">Связаться с нами</p>
-					<ArrowUpRight color="#fff" size="20"></ArrowUpRight>
+					<p class="btn-text light no-border">{m.pricing_enterprise_button()}</p>
+					<!-- <ArrowUpRight color="#fff" size="20"></ArrowUpRight> -->
 				</div></a
 			>
 		</div>
@@ -185,5 +205,12 @@
 		display: flex;
 		flex-direction: column;
 		margin-top: 156px;
+	}
+
+	@media (max-width: 768px) {
+		.pricing {
+			display: flex;
+			margin-top: 72px;
+		}
 	}
 </style>
