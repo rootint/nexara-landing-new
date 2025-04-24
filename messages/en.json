@@ -46,7 +46,7 @@
     "reviews_egor_text": "I have my own audio and video transcription service — Transcribator. Initially, I used Whisper from OpenAI, but now I've switched to Nexara's solution. The cost decreased 3-fold, speed increased 2-fold without any additional optimization on my part, the quality remained high, and this is during Nexara's early development stage. I eagerly await the project's further development.",
     "pricing_title": "Pricing",
     "pricing_subtitle": "Choose the plan that suits you",
-    "pricing_flexible_price": "$0.0036/min",
+    "pricing_flexible_price": "€0,0048/min",
     "pricing_flexible_title": "Flexible",
     "pricing_flexible_point1": "Pay for what you use",
     "pricing_flexible_point2": "Support for 57 languages",
