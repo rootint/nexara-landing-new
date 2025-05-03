@@ -1,5 +1,6 @@
 <script>
 	import icon from '$lib/assets/icon.png';
+    import { getLocale } from '$paraglide/runtime';
 	import { onMount } from 'svelte';
 	let showHeader = false;
 	let scrollPosition = 0;
@@ -42,7 +43,7 @@
 					<div style="width: 4rem" />
 					<a href="#pricing"><p>Тарифы</p></a> -->
 					<div style="width: 4rem" />
-					<a href="https://app.nexara.ru">
+					<a href={getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en'}>
 						<button class="cta-btn">
 							<div class="row">
 								<p class="button-text">Войти</p>

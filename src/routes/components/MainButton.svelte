@@ -1,9 +1,10 @@
 <script>
 	import * as m from '$paraglide/messages.js';
+    import { getLocale } from '$paraglide/runtime';
 </script>
 
 <div class="button-row">
-	<a href="https://app.nexara.ru">
+	<a href={getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en'}>
 		<button class="cta-btn">
 			<div class="row">
 				<p>{m.hero_try_button()}</p>

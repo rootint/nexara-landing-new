@@ -46,7 +46,12 @@
 				<a href="/#pricing"><p>{m.header_pricing()}</p></a>
 				<div style="width: 4rem" />
 				<!-- {/* TODO: Use Paraglide messages for i18n: <p>{m.docs()}</p> */} -->
-				<a href="https://docs.nexara.ru/docs/quick-start"><p>{m.header_docs()}</p></a>
+
+				<a
+					href={getLocale() === 'ru'
+						? 'https://docs.nexara.ru/ru/quickstart'
+						: 'https://docs.nexara.ru/en/quickstart'}><p>{m.header_docs()}</p></a
+				>
 				<div style="width: 4rem" />
 				<!-- {/* TODO: Use Paraglide messages for i18n: <p>{m.blog()}</p> */} -->
 				<a href="https://t.me/nexara_news"><p>{m.header_blog()}</p></a>
@@ -59,7 +64,7 @@
 				<div style="width: 4rem" />
 				<!-- End Language Switch Button -->
 
-				<a href="https://app.nexara.ru">
+				<a href={getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en'}>
 					<button class="cta-btn">
 						<div class="row">
 							<!-- {/* TODO: Use Paraglide messages for i18n: <p class="button-text">{m.login()}</p> */} -->

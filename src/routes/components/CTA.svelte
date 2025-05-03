@@ -1,7 +1,8 @@
 <script>
 	import MainButton from './MainButton.svelte';
 	import { ArrowUpRight } from 'lucide-svelte';
-    import * as m from '$paraglide/messages.js';
+	import * as m from '$paraglide/messages.js';
+	import { getLocale } from '$paraglide/runtime';
 </script>
 
 <section class="cta">
@@ -9,9 +10,7 @@
 		<h2>{m.cta_title()}</h2>
 		<p>{m.cta_subtitle()}</p>
 	</div>
-	<a
-		href="https://app.nexara.ru"
-	>
+	<a href={getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en'}>
 		<button class="cta-btn">
 			<div class="row">
 				<p class="button-text">{m.cta_button()}</p>
