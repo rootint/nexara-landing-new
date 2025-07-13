@@ -1,0 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- Border radius is always 12px;
+- Grid paddings are 32px;
+- Never, fucking never write comments, like this one - {/* Error message is already dynamic */} - they throw an error, svelte doesn't have such comments

@@ -8,9 +8,12 @@
 	<div class="links">
 		<a
 			href="https://tenchat.ru/media/3082640-privet-nexara--tochniy-transkribator-rechi-i-layfkhaki-s-vyborom-api"
-			><img src={tenchat} /></a
+			target="_blank"
+			rel="noopener noreferrer"><img src={tenchat} /></a
 		>
-		<a href="https://habr.com/ru/articles/886924/"><img src={habr} width="128" /></a>
+		<a href="https://habr.com/ru/articles/886924/" target="_blank" rel="noopener noreferrer"
+			><img src={habr} width="128" /></a
+		>
 	</div>
 </section>
 

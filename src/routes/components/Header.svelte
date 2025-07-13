@@ -50,11 +50,15 @@
 				<a
 					href={getLocale() === 'ru'
 						? 'https://docs.nexara.ru/ru/quickstart'
-						: 'https://docs.nexara.ru/en/quickstart'}><p>{m.header_docs()}</p></a
+						: 'https://docs.nexara.ru/en/quickstart'}
+					target="_blank"
+					rel="noopener noreferrer"><p>{m.header_docs()}</p></a
 				>
 				<div style="width: 4rem" />
 				<!-- {/* TODO: Use Paraglide messages for i18n: <p>{m.blog()}</p> */} -->
-				<a href="https://t.me/nexara_news"><p>{m.header_blog()}</p></a>
+				<a href="https://t.me/nexara_news" target="_blank" rel="noopener noreferrer"
+					><p>{m.header_blog()}</p></a
+				>
 				<div style="width: 4rem" />
 
 				<!-- Fancy Language Switch Button -->

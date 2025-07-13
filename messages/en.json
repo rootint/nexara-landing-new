@@ -66,5 +66,7 @@
     "pricing_enterprise_button": "Contact Us",
     "cta_title": "Join us!",
     "cta_subtitle": "Try our service and see for yourself.",
-    "cta_button": "Get 200 minutes"
+    "cta_button": "Get 200 minutes",
+    "cookie_banner_text": "We use cookies to improve your experience on our site.",
+    "cookie_banner_button": "OK"
 }

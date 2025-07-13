@@ -4,7 +4,7 @@
 		<p class="muted">ИНН 590203783421</p>
 	</div>
 	<div class="badges">
-		<a href="https://productradar.ru/product/nexara?utm_source=badge" target="_blank"
+		<a href="https://productradar.ru/product/nexara?utm_source=badge" target="_blank" rel="noopener noreferrer"
 			><img
 				src="https://productradar.ru/badge?period=month&amp;rank=1&amp;theme=black"
 				alt="Награда Продукт месяца #1| Product Radar"

@@ -1,6 +1,6 @@
 <script>
 	import * as m from '$paraglide/messages.js';
-    import { getLocale } from '$paraglide/runtime';
+	import { getLocale } from '$paraglide/runtime';
 </script>
 
 <div class="button-row">
@@ -11,7 +11,7 @@
 			</div>
 		</button>
 	</a>
-	<a href="https://t.me/RND_RandoM">
+	<a href="https://t.me/RND_RandoM" target="_blank" rel="noopener noreferrer">
 		<button class="contact-btn">
 			<div class="row">
 				<p class="contact">{m.hero_contact_us()}</p>

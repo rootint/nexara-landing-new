@@ -82,7 +82,11 @@
 				</div> -->
 			</div>
 			<div style="flex: 1;"></div>
-			<a class="light try-button" href="https://t.me/RND_RandoM"
+			<a
+				class="light try-button"
+				href="https://t.me/RND_RandoM"
+				target="_blank"
+				rel="noopener noreferrer"
 				><div class="button-row">
 					<p class="btn-text light no-border">{m.pricing_enterprise_button()}</p>
 					<!-- <ArrowUpRight color="#fff" size="20"></ArrowUpRight> -->
