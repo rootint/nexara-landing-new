@@ -1,6 +1,17 @@
 <script>
 	import { Check, ArrowUpRight } from 'lucide-svelte';
 	import * as m from '$paraglide/messages.js';
+	import { page } from '$app/stores';
+
+	/**
+	 * Creates the dashboard URL with current query parameters and btn_source tracking
+	 */
+	$: dashboardUrl = (() => {
+		const baseUrl = 'https://app.nexara.ru/';
+		const searchParams = new URLSearchParams($page.url.searchParams);
+		searchParams.set('btn_source', 'pricing');
+		return `${baseUrl}?${searchParams.toString()}`;
+	})();
 </script>
 
 <section class="pricing" id="pricing">
@@ -42,7 +53,7 @@
 					<p class="option-text">{m.pricing_flexible_point7()}</p>
 				</div>
 			</div>
-			<a class="try-button" href="https://app.nexara.ru/"
+			<a class="try-button" href={dashboardUrl}
 				><div class="button-row">
 					<p class="btn-text">{m.pricing_flexible_button()}</p>
 					<!-- <ArrowUpRight color="#111" size="20"></ArrowUpRight> -->

@@ -3,6 +3,17 @@
 	import { ArrowUpRight } from 'lucide-svelte';
 	import * as m from '$paraglide/messages.js';
 	import { getLocale } from '$paraglide/runtime';
+	import { page } from '$app/stores';
+
+	/**
+	 * Creates the dashboard URL with current query parameters and btn_source tracking
+	 */
+	$: dashboardUrl = (() => {
+		const baseUrl = getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en';
+		const searchParams = new URLSearchParams($page.url.searchParams);
+		searchParams.set('btn_source', 'cta');
+		return `${baseUrl}?${searchParams.toString()}`;
+	})();
 </script>
 
 <section class="cta">
@@ -10,7 +21,7 @@
 		<h2>{m.cta_title()}</h2>
 		<p>{m.cta_subtitle()}</p>
 	</div>
-	<a href={getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en'}>
+	<a href={dashboardUrl}>
 		<button class="cta-btn">
 			<div class="row">
 				<p class="button-text">{m.cta_button()}</p>

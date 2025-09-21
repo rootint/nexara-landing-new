@@ -2,6 +2,7 @@
 	import icon from '$lib/assets/icon.png';
     import { getLocale } from '$paraglide/runtime';
 	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 	let showHeader = false;
 	let scrollPosition = 0;
 
@@ -16,6 +17,16 @@
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
 	});
+
+	/**
+	 * Creates the dashboard URL with current query parameters and btn_source tracking
+	 */
+	$: dashboardUrl = (() => {
+		const baseUrl = getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en';
+		const searchParams = new URLSearchParams($page.url.searchParams);
+		searchParams.set('btn_source', 'header');
+		return `${baseUrl}?${searchParams.toString()}`;
+	})();
 </script>
 
 <div class="header-container">
@@ -43,7 +54,7 @@
 					<div style="width: 4rem" />
 					<a href="#pricing"><p>Тарифы</p></a> -->
 					<div style="width: 4rem" />
-					<a href={getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en'}>
+					<a href={dashboardUrl}>
 						<button class="cta-btn">
 							<div class="row">
 								<p class="button-text">Войти</p>

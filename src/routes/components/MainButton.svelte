@@ -1,10 +1,21 @@
 <script>
 	import * as m from '$paraglide/messages.js';
 	import { getLocale } from '$paraglide/runtime';
+	import { page } from '$app/stores';
+
+	/**
+	 * Creates the dashboard URL with current query parameters and btn_source tracking
+	 */
+	$: dashboardUrl = (() => {
+		const baseUrl = getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en';
+		const searchParams = new URLSearchParams($page.url.searchParams);
+		searchParams.set('btn_source', 'hero');
+		return `${baseUrl}?${searchParams.toString()}`;
+	})();
 </script>
 
 <div class="button-row">
-	<a href={getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en'}>
+	<a href={dashboardUrl}>
 		<button class="cta-btn">
 			<div class="row">
 				<p>{m.hero_try_button()}</p>
