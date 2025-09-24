@@ -36,28 +36,17 @@
 				<div class="top-row">
 					<img src={icon} width="21" alt="logo" />
 					<div style="width: 12px" />
-					<p class="logo">Nexara</p>
+					<p class="logo">Ailoy</p>
 				</div>
 			</a>
 			<div class="top-row">
 				<div class="hide-on-mobile">
-					<a href="#pricing"><p>Тарифы</p></a>
-					<div style="width: 4rem" />
-					<a href="https://docs.nexara.ru/docs/quick-start"><p>Документация</p></a>
-                    <div style="width: 4rem" />
-					<a href="https://t.me/nexara_news"><p>Блог</p></a>
-					<!-- <a href="#how-works"><p>Как работает</p></a>
-					<div style="width: 4rem" />
-					<a href="#features"><p>Преимущества</p></a>
-					<div style="width: 4rem" />
-					<a href="#for-who"><p>Для кого</p></a>
-					<div style="width: 4rem" />
-					<a href="#pricing"><p>Тарифы</p></a> -->
+					<a href="#pricing"><p>Pricing</p></a>
 					<div style="width: 4rem" />
 					<a href={dashboardUrl}>
 						<button class="cta-btn">
 							<div class="row">
-								<p class="button-text">Войти</p>
+								<p class="button-text">Log In</p>
 							</div>
 						</button>
 					</a>
@@ -69,7 +58,7 @@
 
 <style>
 	.cta-btn {
-		background-color: #fff;
+		background-color: var(--primary);
 		/* padding: 24px 48px; */
         padding: 8px 20px;
 		border-radius: 12px;
@@ -152,7 +141,7 @@
 
 	.header {
 		margin-top: 16px;
-		background-color: rgba(48, 48, 48, 0.5);
+		background-color: var(--card-bg);
 		backdrop-filter: blur(24px);
 		border: 1px solid rgba(255, 255, 255, 0.11);
 		border-radius: 12px;

@@ -10,14 +10,14 @@
 <Parallax></Parallax>
 
 <div class="app">
-	<!-- <ScrollableHeader></ScrollableHeader> -->
+	<ScrollableHeader></ScrollableHeader>
 	<Header></Header>
 	<main>
 		<slot />
 	</main>
 </div>
 <footer>
-	<!-- <Footer /> -->
+	<Footer />
 </footer>
 
 <!-- <CookieBanner /> -->
@@ -28,7 +28,7 @@
 		z-index: 100;
 		padding: 32px;
 		box-sizing: border-box;
-		background-color: rgba(255, 255, 255, 0.015);
+		background-color: var(--card-bg);
 		backdrop-filter: blur(24px);
 		transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
 			skew(0deg, 0deg);

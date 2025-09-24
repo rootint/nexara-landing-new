@@ -1,5 +1,5 @@
 <script>
-	import { AudioLines, Braces, Code, Computer, FileMusic, Smartphone } from 'lucide-svelte';
+	import { Album, AudioLines, Braces, Code, Computer, Database, FileMusic, FileQuestionIcon, Smartphone, UserCheck } from 'lucide-svelte';
 	import * as m from '$paraglide/messages.js';
 </script>
 
@@ -8,7 +8,7 @@
 	<h3>{m.how_it_works_subtitle()}</h3>
 	<div class="cards">
 		<div class="card">
-			<Computer size="32"></Computer>
+			<FileQuestionIcon size="32"></FileQuestionIcon>
 			<h3 class="card-title">{m.how_it_works_step1_title()}</h3>
 			<p class="card-desc">
 				{m.how_it_works_step1_subtitle()}
@@ -16,19 +16,19 @@
 			<p class="bg-number">1</p>
 		</div>
 		<div class="card">
-			<Smartphone size="32"></Smartphone>
+			<Album size="32"></Album>
 			<h3 class="card-title">{m.how_it_works_step2_title()}</h3>
 			<p class="card-desc">{m.how_it_works_step2_subtitle()}</p>
 			<p class="bg-number">2</p>
 		</div>
-		<div class="card">
-			<AudioLines size="32"></AudioLines>
+		<!-- <div class="card">
+			<Database size="32"></Database>
 			<h3 class="card-title">{m.how_it_works_step3_title()}</h3>
 			<p class="card-desc">
 				{m.how_it_works_step3_subtitle()}
 			</p>
 			<p class="bg-number">3</p>
-		</div>
+		</div> -->
 	</div>
 </section>
 
@@ -73,6 +73,7 @@
 		box-sizing: border-box;
 		flex: 1 0 300px;
 		background-color: var(--card-bg);
+        border: 1px solid var(--border);
 		backdrop-filter: blur(24px);
 		transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
 			skew(0deg, 0deg);

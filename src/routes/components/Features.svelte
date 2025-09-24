@@ -6,10 +6,14 @@
 		Code,
 		Globe,
 		Navigation,
+		Image,
 		Server,
 		ShieldCheck,
 		Subtitles,
-		Timer
+		Timer,
+		UserCheck,
+		Database,
+		TextSearch
 	} from 'lucide-svelte';
 	import russia from '$lib/assets/russia.svg';
 	import world from '$lib/assets/world.svg';
@@ -21,127 +25,19 @@
 	<h2>{m.advantages_title()}</h2>
 	<h3>{m.advantages_subtitle()}</h3>
 	<div class="bento-grid">
-		{#if getLocale() === 'ru'}
-			<div class="card speed">
-				<p class="top-desc">{m.advantages_highspeed_top_text()}</p>
-				<div class="bars-container">
-					<div class="speed-bar">
-						<div class="narrow-bar-container">
-							<div class="narrow-bar nexara" style="width: 100%" />
-							<p class="narrow-bar-text nexara-text">Nexara</p>
-						</div>
-						<p class="x-text nexara-text">240x</p>
-					</div>
-					<div class="speed-bar">
-						<div class="narrow-bar-container">
-							<div class="narrow-bar" style="width: 150px" />
-							<p class="narrow-bar-text">OpenAI API</p>
-						</div>
-						<p class="x-text">35x</p>
-					</div>
-					<div class="speed-bar">
-						<div class="narrow-bar-container">
-							<div class="narrow-bar" style="width: 135px" />
-							<p class="narrow-bar-text">Yandex SpeechKit</p>
-						</div>
-						<p class="x-text">30x</p>
-					</div>
-					<div class="speed-bar">
-						<div class="narrow-bar-container">
-							<div class="narrow-bar" style="width: 50px" />
-							<p class="narrow-bar-text">Sber SaluteSpeech</p>
-						</div>
-						<p class="x-text">13x</p>
-					</div>
-				</div>
-				<h3 class="card-title">{m.advantages_highspeed_title()}</h3>
-				<p class="card-desc">{m.advantages_highspeed_subtitle()}</p>
-			</div>
-		{:else if getLocale() === 'en'}
-			<div class="card speed">
-				<p class="top-desc">{m.advantages_highspeed_top_text()}</p>
-				<div class="bars-container">
-					<div class="speed-bar">
-						<div class="narrow-bar-container">
-							<div class="narrow-bar nexara" style="width: 100%" />
-							<p class="narrow-bar-text nexara-text">Nexara</p>
-						</div>
-						<p class="x-text nexara-text">240x</p>
-					</div>
-					<div class="speed-bar">
-						<div class="narrow-bar-container">
-							<div class="narrow-bar" style="width: 60%" />
-							<p class="narrow-bar-text">Fireworks Large-v3</p>
-						</div>
-						<p class="x-text">150x</p>
-					</div>
-					<div class="speed-bar">
-						<div class="narrow-bar-container">
-							<div class="narrow-bar" style="width: 40%" />
-							<p class="narrow-bar-text">AssemblyAI</p>
-						</div>
-						<p class="x-text">100x</p>
-					</div>
-					<div class="speed-bar">
-						<div class="narrow-bar-container">
-							<div class="narrow-bar" style="width: 20%" />
-							<p class="narrow-bar-text">OpenAI API</p>
-						</div>
-						<p class="x-text">35x</p>
-					</div>
-				</div>
-				<h3 class="card-title">{m.advantages_highspeed_title()}</h3>
-				<p class="card-desc">{m.advantages_highspeed_subtitle()}</p>
-			</div>
-		{/if}
-		<div class="card accuracy">
-			<p class="top-desc">{m.advantages_accuracy_top_text()}</p>
-			<div class="bars-container">
-				<div class="result-row">
-					<div class="bar-nexara" style="width: 150px;">Nexara</div>
-					<p class="bar-text-nexara">27%</p>
-				</div>
-				<div class="result-row">
-					<div class="bar" style="width: 170px;">Whisper Large-v3</div>
-					<p class="bar-text">31%</p>
-				</div>
-				<div class="result-row">
-					<div class="bar" style="width: 190px;">OpenAI API</div>
-					<p class="bar-text">35%</p>
-				</div>
-				{#if getLocale() === 'ru'}
-					<div class="result-row">
-						<div class="bar" style="width: 260px;">Yandex SpeechKit</div>
-						<p class="bar-text">43%</p>
-					</div>
-				{:else if getLocale() === 'en'}
-					<div class="result-row">
-						<div class="bar" style="width: 240px;">AssemblyAI</div>
-						<p class="bar-text">53%</p>
-					</div>
-				{/if}
-			</div>
-			<h3 class="card-title">{m.advantages_accuracy_title()}</h3>
-			<p class="card-desc">{m.advantages_accuracy_subtitle()}</p>
-		</div>
 		<div class="card price">
-			<CircleDollarSign></CircleDollarSign>
+			<Image></Image>
 			<h3 class="card-title">{m.advantages_price_title()}</h3>
 			<p class="card-desc">{m.advantages_price_subtitle()}</p>
 		</div>
 		<div class="card integration">
-			<Code></Code>
+			<UserCheck></UserCheck>
 			<h3 class="card-title">{m.advantages_easyintegration_title()}</h3>
 			<p class="card-desc">{m.advantages_easyintegration_subtitle()}</p>
 		</div>
 		<div class="card russia">
-			{#if getLocale() === 'ru'}
-				<img src={russia} class="russia-img" alt="Map of Russia" />
-				<Navigation></Navigation>
-			{:else if getLocale() === 'en'}
-				<img src={world} class="russia-img" alt="World Map" />
-				<Globe></Globe>
-			{/if}
+			<img src={russia} class="russia-img" alt="Map of Russia" />
+			<Globe></Globe>
 			<h3 class="card-title">{m.advantages_russianservice_title()}</h3>
 			<p class="card-desc">
 				{m.advantages_russianservice_subtitle()}
@@ -165,13 +61,13 @@
 		<div class="card functions">
 			<div class="feature-container">
 				<div class="feature">
-					<AudioLines></AudioLines>
+					<Database></Database>
 				</div>
 				<div class="feature">
 					<Subtitles></Subtitles>
 				</div>
 				<div class="feature">
-					<Timer></Timer>
+					<TextSearch></TextSearch>
 				</div>
 			</div>
 			<h3 class="card-title">{m.advantages_functionality_title()}</h3>
@@ -191,7 +87,8 @@
 		align-items: center;
 		justify-content: center;
 		/* padding: 16px; */
-		background-color: #222;
+		/* background-color: #222; */
+		background-color: var(--card-bg);
 		border-radius: 12px;
 		border: rgba(255, 255, 255, 0.05) solid 1px;
 	}
@@ -308,7 +205,7 @@
 		margin-bottom: 20px;
 		font-size: 24px;
 		text-align: start;
-		color: #fff;
+		color: var(--text);
 		font-weight: 480;
 	}
 	.card-desc {
@@ -318,7 +215,7 @@
 		text-align: start;
 		padding: 0;
 		z-index: 100;
-		color: var(--text-3);
+		color: var(--text-2);
 	}
 	.bento-grid {
 		display: grid;
@@ -337,31 +234,12 @@
 		align-items: start;
 		justify-content: end;
 		box-sizing: border-box;
-		background-color: rgba(255, 255, 255, 0.015);
+		background-color: var(--card-bg);
+		border: 1px solid var(--border);
 		backdrop-filter: blur(24px);
 		transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
 			skew(0deg, 0deg);
 		transform-style: preserve-3d;
-	}
-	.card::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		padding: 1px; /* Thickness of the border */
-		border-radius: 12px;
-		background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.14));
-		-webkit-mask:
-			linear-gradient(#fff 0 0) content-box,
-			linear-gradient(#fff 0 0);
-		mask:
-			linear-gradient(#fff 0 0) content-box,
-			linear-gradient(#fff 0 0);
-		-webkit-mask-composite: xor;
-		mask-composite: exclude;
-		pointer-events: none; /* Prevents interaction with the pseudo-element */
 	}
 
 	.features {

@@ -35,12 +35,12 @@
 
 <style>
 	.cta-btn {
-		background-color: #111;
+		background-color: var(--text);
 		padding: 24px 48px;
 		border-radius: 12px;
 		border: none;
 		cursor: pointer;
-		min-width: 274px;
+		/* min-width: 274px; */
 	}
 	.cta-btn:hover {
 		animation: gradient-shift 2s linear infinite;
@@ -95,7 +95,7 @@
 	.cta {
 		display: flex;
 		justify-content: space-between;
-		background-color: #fff;
+		background-color: var(--primary);
 		border-radius: 12px;
 		padding: 48px;
 		margin-top: 172px;
@@ -103,11 +103,11 @@
 	}
 
 	h2 {
-		color: var(--bg);
+		color: var(--text);
 	}
 
 	p {
-		color: var(--bg);
+		color: var(--text-2);
 		font-size: 20px;
 		font-weight: 400;
 	}

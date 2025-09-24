@@ -21,7 +21,7 @@
 	<h3>{m.pricing_subtitle()}</h3>
 	<div class="cards">
 		<div class="card">
-			<div class="price">{m.pricing_flexible_price()}</div>
+			<!-- <div class="price">{m.pricing_flexible_price()}</div> -->
 			<h3 class="card-title">{m.pricing_flexible_title()}</h3>
 			<div class="option-wrapper">
 				<div class="option-container">
@@ -44,14 +44,6 @@
 					<Check color="#fff" size="20" style="min-width: 20px;" />
 					<p class="option-text">{m.pricing_flexible_point5()}</p>
 				</div>
-				<div class="option-container">
-					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">{m.pricing_flexible_point6()}</p>
-				</div>
-				<div class="option-container">
-					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">{m.pricing_flexible_point7()}</p>
-				</div>
 			</div>
 			<a class="try-button" href={dashboardUrl}
 				><div class="button-row">
@@ -64,31 +56,31 @@
 			<h3 class="card-title">{m.pricing_enterprise_title()}</h3>
 			<div class="option-wrapper">
 				<div class="option-container">
-					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<Check color="#76C76B" size="20" style="min-width: 20px;" />
 					<p class="option-text">{m.pricing_enterprise_point1()}</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<Check color="#76C76B" size="20" style="min-width: 20px;" />
 					<p class="option-text">{m.pricing_enterprise_point2()}</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<Check color="#76C76B" size="20" style="min-width: 20px;" />
 					<p class="option-text">{m.pricing_enterprise_point3()}</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<Check color="#76C76B" size="20" style="min-width: 20px;" />
 					<p class="option-text">{m.pricing_enterprise_point4()}</p>
 				</div>
 				<div class="option-container">
-					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<Check color="#76C76B" size="20" style="min-width: 20px;" />
 					<p class="option-text">{m.pricing_enterprise_point5()}</p>
 				</div>
-				<div class="option-container">
-					<Check color="#fff" size="20" style="min-width: 20px;" />
-					<p class="option-text">{m.pricing_enterprise_point6()}</p>
-				</div>
 				<!-- <div class="option-container">
-					<Check color="#fff" size="20" style="min-width: 20px;" />
+					<Check color="#76C76B" size="20" style="min-width: 20px;" />
+					<p class="option-text">{m.pricing_enterprise_point6()}</p>
+				</div> -->
+				<!-- <div class="option-container">
+					<Check color="#76C76B" size="20" style="min-width: 20px;" />
 					<p class="option-text">Модели на Ваш выбор</p>
 				</div> -->
 			</div>
@@ -113,7 +105,7 @@
 	}
 	.light {
 		color: #fff !important;
-		background-color: #181818 !important;
+		background-color: var(--text) !important;
 		border: rgba(255, 255, 255, 0.12) 1px solid;
 	}
 	.button-row {
@@ -124,7 +116,7 @@
 	}
 	.try-button {
 		text-decoration: none;
-		background-color: #fff;
+		background-color: var(--primary);
 		width: 100%;
 		display: flex;
 		justify-content: center;
@@ -177,7 +169,7 @@
 		margin-bottom: 20px;
 		font-size: 24px;
 		text-align: start;
-		color: #fff;
+		color: var(--text);
 		font-weight: 480;
 	}
 	.card {
@@ -189,32 +181,13 @@
 		align-items: start;
 		box-sizing: border-box;
 		flex: 1 0 300px;
-		background-color: rgba(255, 255, 255, 0.015);
+		background-color: var(--card-bg);
+		border: 1px solid var(--border);
 		backdrop-filter: blur(24px);
 		max-width: 400px;
 		transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
 			skew(0deg, 0deg);
 		transform-style: preserve-3d;
-	}
-	.card::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		padding: 1px; /* Thickness of the border */
-		border-radius: 12px;
-		background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.14));
-		-webkit-mask:
-			linear-gradient(#fff 0 0) content-box,
-			linear-gradient(#fff 0 0);
-		mask:
-			linear-gradient(#fff 0 0) content-box,
-			linear-gradient(#fff 0 0);
-		-webkit-mask-composite: xor;
-		mask-composite: exclude;
-		pointer-events: none; /* Prevents interaction with the pseudo-element */
 	}
 	.pricing {
 		display: flex;

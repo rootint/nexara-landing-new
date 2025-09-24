@@ -1,9 +1,9 @@
 <section class="footer">
 	<div class="financial">
-		<p style="margin-bottom: 8px;">ИП Ошвинцева Татьяна Ивановна</p>
-		<p class="muted">ИНН 590203783421</p>
+		<p style="margin-bottom: 8px;">2025, Team Ailoy</p>
+		<p class="muted">ИНН -</p>
 	</div>
-	<div class="badges">
+	<!-- <div class="badges">
 		<a href="https://productradar.ru/product/nexara?utm_source=badge" target="_blank" rel="noopener noreferrer"
 			><img
 				src="https://productradar.ru/badge?period=month&amp;rank=1&amp;theme=black"
@@ -13,10 +13,10 @@
 				style="margin: 0px; width: 252px; height: 68px; vertical-align: bottom; border: 1px solid transparent;"
 			/></a
 		>
-	</div>
+	</div> -->
 	<div class="legal">
-		<a href="/offer">Публичная оферта</a>
-		<a href="/personal">Политика конфиденциальности</a>
+		<a href="#">Public agreement</a>
+		<a href="#">Privacy Policy</a>
 	</div>
 </section>
 

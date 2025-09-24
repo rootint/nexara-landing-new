@@ -1,5 +1,7 @@
 <script>
 	import green from '$lib/assets/green_wall.svg';
+    import green_ball from '$lib/assets/green_ball.svg';
+    import green_balls from '$lib/assets/green_balls.svg';
 	import orange from '$lib/assets/orange.svg';
 	import red from '$lib/assets/red.svg';
 	import purple from '$lib/assets/purple.svg';
@@ -34,7 +36,10 @@
 </script>
 
 <div class="parallax-container">
-    <img id="green" src={green} width="794"/>
+    <img id="green" src={green} />
+    <img id="blue" src={green_ball} />
+    <img id="black" src={green_ball} style="transform: rotateZ(90deg)"/>
+    <img id="purple" src={green_balls} style="transform: rotateZ(90deg)"/>
     <img id="red" src={green} width="794" style="transform: rotateZ(180deg)"/>
 	<!-- <img id="green" src={green} width="794" style="transform: rotateZ({scrollPosition / 90}deg)" />
 	<img id="red" src={red} width="547" style="transform: rotateZ({scrollPosition / 90}deg)" />
@@ -43,6 +48,10 @@
 </div>
 
 <style>
+    #black {
+        left: -700px;
+		top: 300px;
+    }
 	#green {
 		right: 0px;
 		bottom: 0px;
@@ -53,13 +62,13 @@
 		left: 0px;
         bottom: 0px;
 	}
-	#orange {
-		bottom: 0px;
-		left: -500px;
+	#blue {
+		top: -500px;
+		left: 150px;
 	}
 	#purple {
-		right: -350px;
-		top: 10px;
+		right: -700px;
+		top: 250px;
 	}
 	.parallax-container {
 		position: fixed;
