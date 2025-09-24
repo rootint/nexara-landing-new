@@ -9,7 +9,7 @@
 	 * Creates the dashboard URL with current query parameters and btn_source tracking
 	 */
 	$: dashboardUrl = (() => {
-		const baseUrl = getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en';
+		const baseUrl = getLocale() === 'ru' ? 'https://ailoy.nexara.ru' : 'https://ailoy.nexara.ru';
 		const searchParams = new URLSearchParams($page.url.searchParams);
 		searchParams.set('btn_source', 'cta');
 		return `${baseUrl}?${searchParams.toString()}`;

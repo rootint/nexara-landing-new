@@ -7,7 +7,7 @@
 	 * Creates the dashboard URL with current query parameters and btn_source tracking
 	 */
 	$: dashboardUrl = (() => {
-		const baseUrl = 'https://app.nexara.ru/';
+		const baseUrl = 'https://ailoy.nexara.ru/';
 		const searchParams = new URLSearchParams($page.url.searchParams);
 		searchParams.set('btn_source', 'pricing');
 		return `${baseUrl}?${searchParams.toString()}`;

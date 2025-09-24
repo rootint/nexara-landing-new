@@ -7,7 +7,7 @@
 	 * Creates the dashboard URL with current query parameters and btn_source tracking
 	 */
 	$: dashboardUrl = (() => {
-		const baseUrl = getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en';
+		const baseUrl = getLocale() === 'ru' ? 'https://ailoy.nexara.ru' : 'https://ailoy.nexara.ru';
 		const searchParams = new URLSearchParams($page.url.searchParams);
 		searchParams.set('btn_source', 'hero');
 		return `${baseUrl}?${searchParams.toString()}`;
@@ -39,18 +39,18 @@
 		align-items: center;
 	}
 	.contact {
-		color: #fff;
+		color: var(--text);
 	}
 	.contact-btn {
 		background-color: rgba(255, 255, 255, 0);
 		padding: 16px 36px;
 		border-radius: 12px;
-		border: rgba(255, 255, 255, 0.15) 1px solid;
+		border: var(--border) 2px solid;
 		cursor: pointer;
 		/* min-width: 274px; */
 	}
 	.cta-btn {
-		background-color: #fff;
+		background-color: var(--primary);
 		padding: 16px 36px;
 		border-radius: 12px;
 		border: none;

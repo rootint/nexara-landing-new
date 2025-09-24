@@ -1,5 +1,5 @@
 <script>
-	import green from '$lib/assets/green.svg';
+	import green from '$lib/assets/green_wall.svg';
 	import orange from '$lib/assets/orange.svg';
 	import red from '$lib/assets/red.svg';
 	import purple from '$lib/assets/purple.svg';
@@ -34,20 +34,24 @@
 </script>
 
 <div class="parallax-container">
-	<img id="green" src={green} width="794" style="transform: rotateZ({scrollPosition / 90}deg)" />
+    <img id="green" src={green} width="794"/>
+    <img id="red" src={green} width="794" style="transform: rotateZ(180deg)"/>
+	<!-- <img id="green" src={green} width="794" style="transform: rotateZ({scrollPosition / 90}deg)" />
 	<img id="red" src={red} width="547" style="transform: rotateZ({scrollPosition / 90}deg)" />
 	<img id="orange" src={orange} width="685" style="transform: rotateZ({-scrollPosition / 90}deg)" />
-	<img id="purple" src={purple} width="794" style="transform: rotateZ({scrollPosition / 90}deg)" />
+	<img id="purple" src={purple} width="794" style="transform: rotateZ({scrollPosition / 90}deg)" /> -->
 </div>
 
 <style>
 	#green {
-		right: -600px;
-		bottom: -300px;
+		right: 0px;
+		bottom: 0px;
+        top: 0px;
 	}
 	#red {
-		top: -400px;
-		left: 20%;
+		top: 0px;
+		left: 0px;
+        bottom: 0px;
 	}
 	#orange {
 		bottom: 0px;

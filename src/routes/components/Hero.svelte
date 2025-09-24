@@ -85,11 +85,11 @@
 	.minutes-badge {
 		padding: 8px 16px;
 		border-radius: 12px;
-		background-color: rgba(255, 255, 255, 0.05);
-		border: 1px solid rgba(255, 255, 255, 0.2);
+		/* background-color: var(--p); */
+		border: 1px solid var(--border);
 	}
 	.minutes-badge-text {
-		color: #ddd;
+		color: var(--text);
 		font-size: 16px;
 		text-align: center;
 	}

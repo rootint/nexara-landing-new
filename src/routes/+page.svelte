@@ -19,24 +19,18 @@
 </script>
 
 <svelte:head>
-	<title>Nexara</title>
+	<title>Ailoy</title>
 	<meta name="description" content={m.meta_nexara()} />
-	<meta
-		name="keywords"
-		content="Транскрибация речи, API для транскрибации, российский API, транскрибация, перевод речи в текст, видео в текст"
-	/>
-	<meta property="og:title" content="Nexara" />
-	<meta
-		property="og:description"
-		content="Быстрый, доступный API для транскрибации речи с высокой точностью. Поддержка файлов размером до 1 ГБ."
-	/>
+	<meta name="keywords" content="Помощник для поиска нужных сплавов" />
+	<meta property="og:title" content="Ailoy" />
+	<meta property="og:description" content="Помощник для поиска нужных сплавов" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.nexara.ru/" />
+	<meta property="og:url" content="https://www.ailoy.nexara.ru/" />
 	<meta property="og:locale" content="ru_RU" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Golos+Text:wght@400..900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
 		rel="stylesheet"
 	/>
 </svelte:head>
@@ -58,9 +52,9 @@
 ></Testimonial> -->
 
 <Pricing></Pricing>
-{#if getLocale() === 'ru'}
+<!-- {#if getLocale() === 'ru'}
 	<ReadAboutUs></ReadAboutUs>
-{/if}
+{/if} -->
 <!-- <Testimonial
 	text={m.testimonial_vasil()}
 	subtitle="{m.testimonial_vasil_name()}, WhyNote"

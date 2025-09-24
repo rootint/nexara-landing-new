@@ -35,7 +35,7 @@
 	 * Creates the dashboard URL with current query parameters and btn_source tracking
 	 */
 	$: dashboardUrl = (() => {
-		const baseUrl = getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en';
+		const baseUrl = getLocale() === 'ru' ? 'http://ailoy.nexara.ru' : 'http://ailoy.nexara.ru';
 		const searchParams = new URLSearchParams($page.url.searchParams);
 		searchParams.set('btn_source', 'header');
 		return `${baseUrl}?${searchParams.toString()}`;
@@ -48,7 +48,7 @@
 			<div class="top-row">
 				<img src={icon} width="21" alt="logo" />
 				<div style="width: 12px" />
-				<p class="logo">Nexara</p>
+				<p class="logo">Ailoy</p>
 			</div>
 		</a>
 		<div class="top-row">
@@ -56,28 +56,6 @@
 				<!-- {/* TODO: Use Paraglide messages for i18n: <p>{m.pricing()}</p> */} -->
 				<a href="/#pricing"><p>{m.header_pricing()}</p></a>
 				<div style="width: 4rem" />
-				<!-- {/* TODO: Use Paraglide messages for i18n: <p>{m.docs()}</p> */} -->
-
-				<a
-					href={getLocale() === 'ru'
-						? 'https://docs.nexara.ru/ru/quickstart'
-						: 'https://docs.nexara.ru/en/quickstart'}
-					target="_blank"
-					rel="noopener noreferrer"><p>{m.header_docs()}</p></a
-				>
-				<div style="width: 4rem" />
-				<!-- {/* TODO: Use Paraglide messages for i18n: <p>{m.blog()}</p> */} -->
-				<a href="https://t.me/nexara_news" target="_blank" rel="noopener noreferrer"
-					><p>{m.header_blog()}</p></a
-				>
-				<div style="width: 4rem" />
-
-				<!-- Fancy Language Switch Button -->
-				<button class="lang-switch-btn" on:click={switchLanguage} title="Switch Language">
-					{targetLanguageCode}
-				</button>
-				<div style="width: 4rem" />
-				<!-- End Language Switch Button -->
 
 				<a href={dashboardUrl}>
 					<button class="cta-btn">
@@ -88,15 +66,6 @@
 					</button>
 				</a>
 			</div>
-			<div class="show-on-mobile">
-				<button class="lang-switch-btn" on:click={switchLanguage} title="Switch Language">
-					{targetLanguageCode}
-				</button>
-				<!-- {/* TODO: Consider adding language switch here too if needed */}
-				{/* TODO: Use Paraglide messages for i18n */} -->
-				<!-- <a href="https://docs.nexara.ru/docs/quick-start"><p>Документация</p></a> -->
-				<!-- <a href="https://t.me/nexara_news"><p>Блог</p></a> -->
-			</div>
 		</div>
 	</nav>
 </header>
@@ -104,7 +73,7 @@
 <style>
 	/* Existing styles */
 	.cta-btn {
-		background-color: #fff;
+		background-color: var(--primary);
 		padding: 8px 20px;
 		border-radius: 12px;
 		border: none;
@@ -157,7 +126,7 @@
 		transition: color 0.2s ease; /* Smooth color transition for links */
 	}
 	a:hover p {
-		color: #ccc; /* Slightly lighter color on hover for links */
+		color: var(--text-2); /* Slightly lighter color on hover for links */
 	}
 	.hide-on-mobile {
 		display: flex;

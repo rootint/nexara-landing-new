@@ -1,15 +1,18 @@
 :root {
-	--text: #fff;
-	--bg: #161616;
-	--text-2: #bbb;
+	--text: #0D1D0C;
+	--bg: #fff;
+	--text-2: #0D1D0CC0;
     --text-3: #ddd;
+    --primary: #ACDBA9;
+    --border: #76C76B80;
 	--bg-2: #181818;
+    --card-bg: #C9E9C480;
 	/* --desktop-width: 1368px; */
 	--desktop-width: 1200px;
 }
 
 * {
-	font-family: 'Golos Text', sans-serif;
+	font-family: 'Onest', sans-serif;
 	color: var(--text);
 	/* color: var(--bg); */
 	box-sizing: border-box;
