@@ -5,7 +5,6 @@
 	import Footer from './components/Footer.svelte';
 	import Parallax from './components/Parallax.svelte';
 	import ScrollableHeader from './components/ScrollableHeader.svelte';
-	import CookieBanner from './components/CookieBanner.svelte';
 </script>
 
 <Parallax></Parallax>
@@ -21,7 +20,7 @@
 	<!-- <Footer /> -->
 </footer>
 
-<CookieBanner />
+<!-- <CookieBanner /> -->
 
 <style>
 	footer {

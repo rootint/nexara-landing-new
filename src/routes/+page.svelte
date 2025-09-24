@@ -11,7 +11,7 @@
 	import Cta from './components/CTA.svelte';
 	import Testimonial from './components/Testimonial.svelte';
 
-	import sergey from '$lib/assets/sergey.jpeg';
+	import nornikel from '$lib/assets/nornikel.jpg';
 	import egor from '$lib/assets/egor.jpeg';
 	import vasil from '$lib/assets/vasil.jpg';
 	import Reviews from './components/Reviews.svelte';
@@ -38,13 +38,13 @@
 <Hero></Hero>
 <Testimonial
 	text={m.testimonial_sergey()}
-	subtitle="{m.testimonial_sergey_name()}, Summarizer"
-	image={sergey}
+	subtitle="{m.testimonial_sergey_name()}"
+	image={nornikel}
 ></Testimonial>
 <HowItWorks></HowItWorks>
 <Features></Features>
 <!-- <Usage></Usage> -->
-<Reviews></Reviews>
+<!-- <Reviews></Reviews> -->
 <!-- <Testimonial
 	text={m.testimonial_egor()}
 	subtitle="{m.testimonial_egor_name()}, Transcribator"
