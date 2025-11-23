@@ -73,10 +73,10 @@
 				<div style="width: 4rem" />
 
 				<!-- Fancy Language Switch Button -->
-				<button class="lang-switch-btn" on:click={switchLanguage} title="Switch Language">
+				<!-- <button class="lang-switch-btn" on:click={switchLanguage} title="Switch Language">
 					{targetLanguageCode}
 				</button>
-				<div style="width: 4rem" />
+				<div style="width: 4rem" /> -->
 				<!-- End Language Switch Button -->
 
 				<a href={dashboardUrl}>
@@ -89,9 +89,9 @@
 				</a>
 			</div>
 			<div class="show-on-mobile">
-				<button class="lang-switch-btn" on:click={switchLanguage} title="Switch Language">
+				<!-- <button class="lang-switch-btn" on:click={switchLanguage} title="Switch Language">
 					{targetLanguageCode}
-				</button>
+				</button> -->
 				<!-- {/* TODO: Consider adding language switch here too if needed */}
 				{/* TODO: Use Paraglide messages for i18n */} -->
 				<!-- <a href="https://docs.nexara.ru/docs/quick-start"><p>Документация</p></a> -->

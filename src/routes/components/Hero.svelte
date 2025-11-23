@@ -1,5 +1,6 @@
 <script>
 	import * as m from '$paraglide/messages.js';
+	import { AudioLines } from 'lucide-svelte';
 
 	import MainButton from './MainButton.svelte';
 
@@ -68,6 +69,7 @@
 		/></a
 	> -->
 	<div class="minutes-badge">
+		<AudioLines size="16" />
 		<p class="minutes-badge-text">{m.hero_minutes()}</p>
 	</div>
 	<div class="animate-text">
@@ -83,13 +85,16 @@
 
 <style>
 	.minutes-badge {
+        display: flex;
+        align-items: center;
 		padding: 8px 16px;
 		border-radius: 12px;
-		background-color: rgba(255, 255, 255, 0.05);
-		border: 1px solid rgba(255, 255, 255, 0.2);
+		background-color: rgba(255, 255, 255, 0.015);
+		border: 1px solid rgba(255, 255, 255, 0.1);
 	}
 	.minutes-badge-text {
-		color: #ddd;
+        margin-left: 12px;
+		color: rgba(250, 250, 250, 0.9);
 		font-size: 16px;
 		text-align: center;
 	}
