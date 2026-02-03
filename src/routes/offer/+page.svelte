@@ -1,21 +1,22 @@
 <svelte:head>
-	<title>Оферта Nexara</title>
-	<meta
-		name="description"
-		content="Nexara - быстрый, доступный и точный API для транскрибации речи. Поддержка большинства аудио и видео форматов, простая интеграция, низкая цена."
-	/>
-	<meta
-		name="keywords"
-		content="Транскрибация речи, API для транскрибации, российский API, транскрибация, перевод речи в текст, видео в текст"
-	/>
-	<meta property="og:title" content="Nexara" />
-	<meta
-		property="og:description"
-		content="Быстрый, доступный API для транскрибации речи с высокой точностью. Поддержка файлов размером до 1 ГБ."
-	/>
+	<title>Публичная оферта — Nexara</title>
+	<meta name="description" content="Публичная оферта сервиса Nexara. Условия использования API для транскрибации речи." />
+	<meta name="keywords" content="оферта Nexara, условия использования, договор оферта" />
+	<link rel="canonical" href="https://www.nexara.ru/offer" />
+
+	<meta property="og:title" content="Публичная оферта — Nexara" />
+	<meta property="og:description" content="Публичная оферта сервиса Nexara. Условия использования API для транскрибации речи." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.nexara.ru/" />
+	<meta property="og:url" content="https://www.nexara.ru/offer" />
 	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:site_name" content="Nexara" />
+	<meta property="og:image" content="https://www.nexara.ru/og_image.png" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Публичная оферта — Nexara" />
+	<meta name="twitter:description" content="Публичная оферта сервиса Nexara. Условия использования API для транскрибации речи." />
+	<meta name="twitter:image" content="https://www.nexara.ru/og_image.png" />
+
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link

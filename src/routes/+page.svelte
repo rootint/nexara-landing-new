@@ -19,26 +19,64 @@
 </script>
 
 <svelte:head>
-	<title>Nexara</title>
+	<title>Nexara — API для транскрибации речи</title>
 	<meta name="description" content={m.meta_nexara()} />
 	<meta
 		name="keywords"
 		content="Транскрибация речи, API для транскрибации, российский API, транскрибация, перевод речи в текст, видео в текст"
 	/>
-	<meta property="og:title" content="Nexara" />
-	<meta
-		property="og:description"
-		content="Быстрый, доступный API для транскрибации речи с высокой точностью. Поддержка файлов размером до 1 ГБ."
-	/>
+	<link rel="canonical" href="https://www.nexara.ru/" />
+
+	<meta property="og:title" content="Nexara — API для транскрибации речи" />
+	<meta property="og:description" content="Высокопроизводительный движок для speech-to-text. Лучшая диаризация спикеров в России, API, on-premise, в 10 раз быстрее open-source решений." />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.nexara.ru/" />
 	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:site_name" content="Nexara" />
+	<meta property="og:image" content="https://www.nexara.ru/og_image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Nexara — Самая быстрая транскрибация в России" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Nexara — API для транскрибации речи" />
+	<meta name="twitter:description" content="Высокопроизводительный движок для speech-to-text. Лучшая диаризация спикеров в России, API, on-premise, в 10 раз быстрее open-source решений." />
+	<meta name="twitter:image" content="https://www.nexara.ru/og_image.png" />
+
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Golos+Text:wght@400..900&display=swap"
 		rel="stylesheet"
 	/>
+
+	{@html `<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "Nexara",
+		"url": "https://www.nexara.ru",
+		"logo": "https://www.nexara.ru/logo512.png",
+		"description": "Быстрый и надежный API для транскрибации речи",
+		"sameAs": []
+	}
+	</script>`}
+
+	{@html `<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Service",
+		"name": "Nexara API",
+		"description": "API для транскрибации речи с высокой скоростью и точностью. Поддержка 57 языков, диаризация, российские сервера.",
+		"provider": {
+			"@type": "Organization",
+			"name": "Nexara"
+		},
+		"serviceType": "Speech-to-Text API",
+		"areaServed": "RU",
+		"image": "https://www.nexara.ru/og_image.png"
+	}
+	</script>`}
 </svelte:head>
 
 <Hero></Hero>

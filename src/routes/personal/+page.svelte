@@ -1,18 +1,22 @@
 <svelte:head>
-	<title>Политика Конфиденциальности Nexara</title>
-	<meta
-		name="description"
-		content="Nexara - быстрый, доступный и точный API для транскрибации речи. Поддержка большинства аудио и видео форматов, простая интеграция, низкая цена."
-	/>
-	<meta
-		name="keywords"
-		content="Транскрибация речи, API для транскрибации, российский API, транскрибация, перевод речи в текст, видео в текст"
-	/>
-    <meta property="og:title" content="Nexara" />
-    <meta property="og:description" content="Быстрый, доступный API для транскрибации речи с высокой точностью. Поддержка файлов размером до 1 ГБ." />
+	<title>Политика конфиденциальности — Nexara</title>
+	<meta name="description" content="Политика конфиденциальности сервиса Nexara. Информация о сборе и обработке персональных данных." />
+	<meta name="keywords" content="политика конфиденциальности Nexara, персональные данные, приватность" />
+	<link rel="canonical" href="https://www.nexara.ru/personal" />
+
+	<meta property="og:title" content="Политика конфиденциальности — Nexara" />
+	<meta property="og:description" content="Политика конфиденциальности сервиса Nexara. Информация о сборе и обработке персональных данных." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.nexara.ru/" />
-    <meta property="og:locale" content="ru_RU" />
+	<meta property="og:url" content="https://www.nexara.ru/personal" />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:site_name" content="Nexara" />
+	<meta property="og:image" content="https://www.nexara.ru/og_image.png" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Политика конфиденциальности — Nexara" />
+	<meta name="twitter:description" content="Политика конфиденциальности сервиса Nexara. Информация о сборе и обработке персональных данных." />
+	<meta name="twitter:image" content="https://www.nexara.ru/og_image.png" />
+
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
