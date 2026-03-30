@@ -4,13 +4,11 @@
 	import * as m from '$paraglide/messages.js';
 	import { getLocale } from '$paraglide/runtime';
 	import { page } from '$app/stores';
+	import { browser } from '$app/environment';
 
-	/**
-	 * Creates the dashboard URL with current query parameters and btn_source tracking
-	 */
 	$: dashboardUrl = (() => {
 		const baseUrl = getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en';
-		const searchParams = new URLSearchParams($page.url.searchParams);
+		const searchParams = browser ? new URLSearchParams($page.url.searchParams) : new URLSearchParams();
 		searchParams.set('btn_source', 'cta');
 		return `${baseUrl}?${searchParams.toString()}`;
 	})();

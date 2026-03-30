@@ -3,6 +3,7 @@
     import { getLocale } from '$paraglide/runtime';
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import { browser } from '$app/environment';
 	let showHeader = false;
 	let scrollPosition = 0;
 
@@ -18,12 +19,9 @@
 		return () => window.removeEventListener('scroll', handleScroll);
 	});
 
-	/**
-	 * Creates the dashboard URL with current query parameters and btn_source tracking
-	 */
 	$: dashboardUrl = (() => {
 		const baseUrl = getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en';
-		const searchParams = new URLSearchParams($page.url.searchParams);
+		const searchParams = browser ? new URLSearchParams($page.url.searchParams) : new URLSearchParams();
 		searchParams.set('btn_source', 'header');
 		return `${baseUrl}?${searchParams.toString()}`;
 	})();

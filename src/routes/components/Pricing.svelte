@@ -2,13 +2,11 @@
 	import { Check, ArrowUpRight } from 'lucide-svelte';
 	import * as m from '$paraglide/messages.js';
 	import { page } from '$app/stores';
+	import { browser } from '$app/environment';
 
-	/**
-	 * Creates the dashboard URL with current query parameters and btn_source tracking
-	 */
 	$: dashboardUrl = (() => {
 		const baseUrl = 'https://app.nexara.ru/';
-		const searchParams = new URLSearchParams($page.url.searchParams);
+		const searchParams = browser ? new URLSearchParams($page.url.searchParams) : new URLSearchParams();
 		searchParams.set('btn_source', 'pricing');
 		return `${baseUrl}?${searchParams.toString()}`;
 	})();

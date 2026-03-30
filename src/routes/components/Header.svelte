@@ -4,7 +4,7 @@
 	import { setLocale } from '$paraglide/runtime';
 	import * as m from '$paraglide/messages.js';
 	import { page } from '$app/stores';
-	// Import messages if you want to translate static text like "Тарифы", "Войти" etc.
+	import { browser } from '$app/environment';
 
 	// No longer needed for the toggle button:
 	// let dropdownOpen = false;
@@ -31,12 +31,9 @@
 	 */
 	$: targetLanguageCode = getLocale() === 'ru' ? 'EN' : 'RU';
 
-	/**
-	 * Creates the dashboard URL with current query parameters and btn_source tracking
-	 */
 	$: dashboardUrl = (() => {
 		const baseUrl = getLocale() === 'ru' ? 'https://app.nexara.ru' : 'https://app.nexara.ru/en';
-		const searchParams = new URLSearchParams($page.url.searchParams);
+		const searchParams = browser ? new URLSearchParams($page.url.searchParams) : new URLSearchParams();
 		searchParams.set('btn_source', 'header');
 		return `${baseUrl}?${searchParams.toString()}`;
 	})();
