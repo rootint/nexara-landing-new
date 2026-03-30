@@ -43,13 +43,6 @@
 	<meta name="twitter:description" content="Высокопроизводительный движок для speech-to-text. Лучшая диаризация спикеров в России, API, on-premise, в 10 раз быстрее open-source решений." />
 	<meta name="twitter:image" content="https://www.nexara.ru/og_image.png" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Golos+Text:wght@400..900&display=swap"
-		rel="stylesheet"
-	/>
-
 	{@html `<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
