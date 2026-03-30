@@ -60,8 +60,8 @@
 
 				<a
 					href={getLocale() === 'ru'
-						? 'https://docs.nexara.ru/ru/quickstart'
-						: 'https://docs.nexara.ru/en/quickstart'}
+						? 'https://docs.nexara.ru/'
+						: 'https://docs.nexara.ru/'}
 					target="_blank"
 					rel="noopener noreferrer"><p>{m.header_docs()}</p></a
 				>
@@ -94,7 +94,7 @@
 				</button> -->
 				<!-- {/* TODO: Consider adding language switch here too if needed */}
 				{/* TODO: Use Paraglide messages for i18n */} -->
-				<!-- <a href="https://docs.nexara.ru/docs/quick-start"><p>Документация</p></a> -->
+				<!-- <a href="https://docs.nexara.ru/"><p>Документация</p></a> -->
 				<!-- <a href="https://t.me/nexara_news"><p>Блог</p></a> -->
 			</div>
 		</div>
